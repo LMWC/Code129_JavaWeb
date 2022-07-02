@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<书架 xmlns="http://www.itcast.cn"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.itcast.cn bookSchema.xsd" >
+    <书 bid="1">
+        <书名>java从入门到精通</书名>
+        <作者>吕龙飞</作者>
+        <售价>99</售价>
+    </书>
+    <书 bid="2">
+        <书名>java从入门到精通</书名>
+        <作者>吕龙飞</作者>
+        <售价>99</售价>
+    </书>
+</书架>

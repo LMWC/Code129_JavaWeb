@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+    DTD约束引入方式
+	方式1：内部DTD,在XML文档内部嵌入DTD,只对当前XML有效。
+		<?xml version="1.0" encoding="UTF-8" ?>
+		<!DOCTYPE 根标签 [约束]>
+		eg：
+		    <?xml version = "1.0" encoding="utf-8" ?>
+            <!DOCTYPE 购物篮 [
+               <!ELEMENT 购物篮 (肉+)>
+                <!ELEMENT 肉 EMPTY>
+                <!ATTLIST 肉 品种 ( 鸡肉 | 牛肉 | 猪肉 | 鱼肉 ) "鸡肉">
+            ]>
+
+
+	方式2：外部DTD—本地DTD,DTD文档在本地系统上,企业内部自己项目使用。
+		<!DOCTYPE 根标签 SYSTEM "dtd约束文件名">
+		eg:<!DOCTYPE 书架 SYSTEM "bookdtd.dtd">
+
+	方式3：外部DTD—公共DTD,DTD文档在网络上,一般都有框架提供 , 也是我们使用最多的.
+		<!DOCTYPE 根标签 PUBLIC "dtd约束文件名" "DTD文件的URL地址">
+		eg:<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+-->
+<!--
+    复制内容如下到XML文件中:
+        <!DOCTYPE 书架 SYSTEM "bookdtd.dtd">
+
+-->
+
+<!--
+DTD约束元素语法
+    1.约束元素嵌套层级：<!ELEMENT 父标签 （子标签1,子标签2,…）>
+    2.约束元素体的数据。
+        <!ELEMENT 标签名字 标签类型>
+        标签类型:
+            EMPTY(即空元素,例如<hr/>)
+            ANY(任意类型)
+            (#PCDATA)  字符串数据
+    数量词
+        ?:表示出现0次或1次
+        *:表示出现0次或多次
+        +:表示出现1次或多次
+        ,:表示顺序
+        |:表示或者 多选一 or
+  3.对标签属性的约束：
+	<!ATTLIST 标签名
+		属性名 属性类型 属性约束
+		属性名 属性类型 属性约束
+		...
+		属性名 属性类型 属性约束
+	>
+	属性类型：
+	   ID：表示属性值唯一，不能以数字开头
+	   CDATA：表示文本字符串
+	   枚举类型：没有关键字 多选1 (值1|值2...)
+	属性约束：
+		#REQUIRED：表示该属性必须出现
+		#IMPLIED：表示属性可有可无
+		#FIXED：表示如果标签有这个属性 属性的值是一个固定的
+		默认值：直接写 表示该属性有一个默认值，当然默认值可以不使用
+-->
+<!--xml文档的根标签名称是书架   书架标签下可以有多个书的子标签-->
+<!ELEMENT 书架 (书+)>
+<!--书标签下 可以有书名、作者、售价三个标签 三个子标签的顺序为 书写、作者、售价  -->
+<!ELEMENT 书 (书名,作者,售价)>
+<!--书名标签体中存放文本数据-->
+<!ELEMENT 书名 (#PCDATA)>
+<!--作者标签体中存放文本数据-->
+<!ELEMENT 作者 (#PCDATA)>
+<!--售价标签体中存放文本数据-->
+<!ELEMENT 售价 (#PCDATA)>
+<!--标签属性约束定义-->
+<!--1.定义了书标签有id属性 类型为ID，编写书标签时该属性必须有-->
+<!--2.定义了书标签有编号属性 类型为CDATA 编写书标签时该属性可有可无-->
+<!--3.定义了书标签有出版社属性 类型为枚举 默认值为“传智播客” 该属性可有可无 -->
+<!--4.定义了书标签有type属性 类型为CDATA 该属性如果使用 属性值必须为"IT"-->
+<!ATTLIST 书
+        id ID #REQUIRED
+        编号 CDATA #IMPLIED
+        出版社 (清华|北大|传智播客) "传智播客"
+        type CDATA #FIXED "IT"
+        >
