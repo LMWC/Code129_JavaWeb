@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+    <!--
+        Vue入门程序：
+            1.创建项目，添加vue.js
+            2.将vue.js引入到指定的html页面中
+            3.创建Vue核心对象
+            4.在Vue模型中声明数据并同时指定vue的使用区域
+            5.在页面vue的使用区域中使用插值表达式展示数据
+
+        Vue入门注意事项：
+            1.要在html页面中使用vue，必须要引入vue.js
+            2.创建Vue对象 使用new Vue({...});
+            3.Vue核心对象中的三个属性：
+                el：指定vue在页面中的使用区域  vue的相关内容一定要写在vue的使用区域中  不能直接使用body作为vue的使用区域
+                data：Vue中的模型数据
+                methods：Vue中声明的js函数   属性是复数methods，不是method
+            4.{{}}插值表达式  用于在标签体中使用 显示数据，不能用于标签的属性值
+                插值表达式既然是一个表达式，可以执行运算，将运算结果输出 但是不能写一条声明语句
+            5.vue使用时，一旦某个地方报错 则会导致整个页面都不正常显示【显示空白】  解决：浏览器F12控制台找原因解决
+
+    -->
+
+    <div id="app">
+        <!--插值表达式-->
+        {{message}}
+        {{num+1}}
+        {{flag?"成功":"失败"}}
+
+        <!--错误示例：插值表达式中不能写js语句-->
+        <!--{{var i=10;}}-->
+    </div>
+
+    <!--创建Vue对象-->
+    <script>
+        new Vue({
+            //Vue使用区域
+            el:"#app",
+            //Vue中声明的模型数据
+            data:{
+                message:"Hello Vue...",
+                num:100,
+                flag:false
+            },
+            //Vue中声明的js函数
+            methods:{}
+        });
+    </script>
+</body>
+</html>

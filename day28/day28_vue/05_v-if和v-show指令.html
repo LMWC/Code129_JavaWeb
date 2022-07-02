@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--
+        v-if和v-show：控制标签的显示和隐藏   【推荐使用v-if】
+            1.当v-if和v-show属性值为true时，标签正常显示
+            2.当v-if和v-show属性值为false是，标签不显示   v-if是将该标签直接删除了，v-show是设置了标签的css样式将其隐藏了，标签还在。
+
+        多重if判断：age>=18 上大学  age>=13 上中学  age>=7 上小学  否则 玩泥巴
+    -->
+    <div id="app">
+        <h3>Hello Vue</h3>
+        <h3 v-if="flag">Hello Vue</h3>
+        <h3 v-show="flag">Hello Vue</h3>
+        <hr>
+
+        <h4 v-if="age>=18">上大学</h4>
+        <h4 v-else-if="age>=13">上中学</h4>
+        <h4 v-else-if="age>=7">上小学</h4>
+        <h4 v-else>玩泥巴</h4>
+
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                flag:false,
+                age:6
+            },
+            methods:{
+
+            }
+        });
+    </script>
+</body>
+</html>

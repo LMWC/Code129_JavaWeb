@@ -1,0 +1,42 @@
+案例环境搭建：
+    1.创建数据库、表、插入测试数据  【选择day24下的tb_user】
+    2.创建javaweb项目，添加依赖
+    3.创建项目包结构
+        com.itheima.bean：创建表对应的实体类
+        com.itheima.web：创建UserServlet
+        com.itheima.service：创建UserService
+        com.itheima.dao：创建XxxDao接口
+        com.itheima.utils：存放工具类
+    4.创建dao接口映射文件
+    5.添加MyBatis相关配置文件
+    6.添加静态资源html、css、js...
+    7.运行测试
+
+ 使用前后端分离实现注册用户和查询用户列表显示功能
+ 1.注册用户：
+    1.1：前端html
+        注意：点击注册按钮时使用axios发送ajax请求
+        1.使用vue将用户输入的用户名和密码封装到一个模型数据中
+        2.发送ajax请求，携带json参数【注册用户信息】
+        3.处理响应结果
+
+    1.2：后台java
+        1.获取请求参数 【封装到user对象中】
+        2.调用业务处理
+        3.响应普通数据 true|false
+
+
+ 2.查询用户列表展示
+    2.1：前端html
+        注意：在list.html中 在vue的created生命周期函数阶段发送ajax请求
+            1.在vue模型数据中定义一个变量 用于接收后台响应的数据
+            2.发送ajax请求
+            3.接收后台响应的数据 完成数据绑定
+            4.使用v-for指令在页面遍历展示
+
+    2.2：后台java
+        1.获取请求参数 【没有】
+        2.调用业务处理
+        3.响应json数据
+
+

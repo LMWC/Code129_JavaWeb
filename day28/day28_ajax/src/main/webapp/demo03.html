@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <button onclick="fun01()">axios发送ajax请求【get】</button> <br>
+    <button onclick="fun02()">axios发送ajax请求【post】</button> <br>
+    <span id="spanId"></span>
+
+
+    <!--
+        axios使用步骤：
+            1.项目中加入axios的js文件，并且在html页面中引入
+            2.直接使用axios发送ajax请求
+                语法：
+                axios({
+                    method:"请求方式",
+                    url:"请求地址",
+                    data:"请求参数"
+                }).then(function(response){
+                    //对响应数据进行处理  response：表示响应信息【响应头、响应体】
+                });
+    -->
+    <script src="js/axios-0.18.0.js"></script>
+    <script>
+
+        //axios发送get方式请求
+        function fun01() {
+            axios({
+                method:"get",
+                url:"demo01?username=zhangsan"
+            }).then(function(response){
+                //对响应数据进行处理  response：表示响应信息【响应头、响应体】  response.data:表示的就是响应体【响应数据】
+                console.log("===111===");
+                console.log(JSON.stringify(response));
+
+                //获取后台响应数据显示在span标签体中
+                document.getElementById("spanId").innerHTML = response.data;
+
+                console.log("===222===");
+
+            });
+        }
+
+        //axios发送post方式请求
+        function fun02() {
+            axios({
+                method:"post",
+                url:"demo01",
+                data:"username=lisi&age=18"
+            }).then(function(response){
+                //获取后台响应数据显示在span标签体中
+                document.getElementById("spanId").innerHTML = response.data;
+            });
+        }
+    </script>
+</body>
+</html>

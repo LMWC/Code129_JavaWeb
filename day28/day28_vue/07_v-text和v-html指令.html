@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--
+        v-text:作为属性用在标签上，设置输出到标签体中的文本内容     不会解析html标签内容
+        v-html:作为属性用在标签上，设置输出到标签体中的文本内容     会解析html标签内容
+
+        注意：
+            1.如果需要设置标签体中展示的内容 含有html标签，就需要使用到v-html指令，如果只是设置HTML标签体中的文本，使用v-text和插值表达式都可以
+    -->
+    <div id="app">
+        <!--v-text指令和插值表达式都不能解析html标签内容-->
+        {{msg1}}
+        {{msg2}}
+
+        <p v-text="msg2"></p>
+        <p v-html="msg2"></p>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                msg1:"Hello Vue",
+                msg2:"<font color='red'>Hello Vue</font>",
+            },
+            methods:{
+
+            }
+        });
+    </script>
+</body>
+</html>

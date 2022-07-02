@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="fun01()">js发送ajax请求【get】</button> <br>
+    <button onclick="fun02()">js发送ajax请求【post】</button> <br>
+    <span id="spanId"></span>
+
+
+    <!--
+        js发送ajax请求步骤：
+            1.创建异步请求发送对象 XMLHttpRequest
+            2.打开连接【设置请求方式、请求地址】
+            3.发送请求
+            4.监听异步请求发送对象状态变化 处理响应数据
+
+        js发送ajax请求传递参数：
+            get方式传参：直接将参数拼接在url后面
+            post方式传参：可以将参数拼接在url后面，但是不推荐  一般是将参数放在send方法中，需要在发送请求之前设置请求头，表示请求参数的传递以表单方式提交
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("username=lisi"); 或 xhttp.send("username=lisi&age=18");
+    -->
+    <script>
+        //使用js发送ajax请求【post】
+        function fun02() {
+            //1.创建异步请求发送对象
+            var xhttp = new XMLHttpRequest();
+
+            //2.打开连接  POST方式请求 参数可以拼接在url后面 但是一般不这样做
+            xhttp.open("POST", "demo01");
+
+            //3.发送请求  post方式发送请求  请求参数写在send方法中
+            //原生js post方式请求传递参数 需要设置请求头 表示请求参数以表单方式提交
+            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            xhttp.send("username=lisi");
+
+            //4.监听异步请求发送对象状态变化 处理响应数据
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //this.responseText：得到后台响应的文本数据
+                    document.getElementById("spanId").innerHTML = this.responseText;
+                }
+            };
+        }
+
+        //使用js发送ajax请求【get】
+        function fun01() {
+            //1.创建异步请求发送对象
+            var xhttp;
+            if (window.XMLHttpRequest) {
+                xhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            //2.打开连接
+            /*
+                参数1：请求方式
+                参数2：请求地址
+                参数3：是否发送异步请求 默认为true 表示发送异步请求 可省略
+             */
+            xhttp.open("GET", "demo01?username=zhangsan");
+
+
+            //3.发送请求
+            xhttp.send();
+
+            //4.监听异步请求发送对象状态变化 处理响应数据
+            /*
+             * onreadystatechange：监听异步请求发送对象状态变化事件
+             *  this表示的就是异步请求发送对象
+             *      readyState：异步请求发送对象状态
+             *      status：http状态码
+             */
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //this.responseText：得到后台响应的文本数据
+                    document.getElementById("spanId").innerHTML = this.responseText;
+                }
+            };
+        }
+    </script>
+</body>
+</html>

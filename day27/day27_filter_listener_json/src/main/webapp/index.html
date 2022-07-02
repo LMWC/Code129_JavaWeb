@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        //1.1：定义json对象
+        var user = {"username":"zs","age":18};
+        //1.2.1：定义json数组
+        var countries = ["大中国","小日本","丑陋国"];
+        //1.2.2：定义json对象数组
+        var users = [{"username":"zs","age":18},{"username":"ls","age":28},{"username":"ww","age":38}];
+        //1.3：混合嵌套
+        var result = {"flag":true,"msg":"查询成功","data":[{"username":"zs","age":18},{"username":"ls","age":28},{"username":"ww","age":38}]};
+
+        //解析json数据
+        //2.1：json对象解析：json对象.key
+        console.log(user.username+" "+user.age);
+
+        //2.2：json数组解析：json数组[下标]
+        console.log(countries[2]);
+
+        //2.3：混合形式json数据解析：剥洋葱方式  从外到内一层层解析
+        //需求1：获取json数组users中第二个用户的用户名
+        console.log(users[1].username);
+
+        //需求2：获取json对象 result 中data属性上存的第三个用户的age属性值
+        console.log(result.data[2].age);
+
+
+
+        //js对象和json对象转换
+        //1.js对象转json对象
+        var jsObj = {
+            username:"张三",
+            address:"深圳"
+        };
+        var jsonObj = JSON.stringify(jsObj);
+        console.log(jsObj);
+        console.log(jsonObj);
+
+        //2.json对象转js对象
+
+        //json对象
+        var jsonObj02 = {"username":"张三","address":"深圳"};
+
+        //json字符串
+        var jsonStr = "{\"username\":\"张三\",\"address\":\"深圳\"}";
+
+        var jsObj02 = JSON.parse();
+        console.log(jsObj02);
+
+        //后面会学习vue  vue中会将js对象自动转为json对象
+        //实际使用时 使用的是json对象  java后台响应给前端的是json字符串 但是前端接收到之后基本上都会自动转换成json对象 就可以直接使用了
+
+    </script>
+</body>
+</html>

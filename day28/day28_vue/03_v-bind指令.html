@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        【需求】：使用vue定义变量ys，对页面中的字体标签color属性赋值。使用vue定义变量url，对页面中的超链接href属性赋值。
+
+        问题：直接使用vue模型中声明的数据 变量名为html标签自带属性赋值失败！
+        原因：HTML标签自带属性不能直接使用Vue中声明的数据
+        解决：使用Vue指令 v-bind为HTML标签自带属性绑定vue中声明的数据就可以了
+
+        v-bind：为HTML标签自带属性绑定vue中声明的数据  简写:
+        注意：
+            1.v-bind指令作为html标签属性使用，写在html标签开始标签中
+            2.v-bind指令可以直接获取vue中声明的数据使用
+    -->
+    <div id="app">
+        <font v-bind:color="ys" :size="num+7">传智播客</font>
+        <a :href="url">黑马程序员</a>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                num:100,
+                ys:"red",
+                url:"http://www.itcast.cn"
+            },
+            methods:{
+
+            }
+        });
+    </script>
+</body>
+</html>

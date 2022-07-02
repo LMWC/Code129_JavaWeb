@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button onclick="fun01()">js发送ajax请求</button> <br>
+    <span id="spanId"></span>
+
+    <script>
+        //使用js发送ajax请求
+        function fun01() {
+            //1.创建异步请求发送对象
+            var xhttp;
+            if (window.XMLHttpRequest) {
+                xhttp = new XMLHttpRequest();
+            } else {
+                // code for IE6, IE5
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            //2.打开连接
+            /*
+                参数1：请求方式
+                参数2：请求地址
+                参数3：是否发送异步请求 默认为true 表示发送异步请求 可省略
+             */
+            xhttp.open("GET", "demo01");
+
+
+            //3.发送请求
+            xhttp.send();
+
+            //4.监听异步请求发送对象状态变化 处理响应数据
+            /**
+             * onreadystatechange：监听异步请求发送对象状态变化事件
+             *  this表示的就是异步请求发送对象
+             *      readyState：异步请求发送对象状态
+             *      status：http状态码
+             */
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    //this.responseText：得到后台响应的文本数据
+                    document.getElementById("spanId").innerHTML = this.responseText;
+                }
+            };
+        }
+    </script>
+</body>
+</html>

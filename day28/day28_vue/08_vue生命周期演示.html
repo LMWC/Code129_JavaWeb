@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        Vue生命周期：
+            1.实例化|初始化：
+                beforeCreate：创建前		vue对象还没有创建成功 初始化vue的常用事件和生命周期函数
+                created：Vue对象创建完成	已经初始化好了Vue中的data和methods
+            2.服务：
+                beforeMount：载入前			vue还没有将data中的数据绑定到页面显示
+                mounted：挂载完成			vue成功的将data中的数据绑定到页面显示
+                beforeUpdate：修改之前		data中的数据发生改变
+                updated：修改后				data中的数据发生改变，同时同步到页面展示最新的数据了
+            3.销毁：手动销毁 $destroy
+                beforeDestroy：销毁之前
+                destroyed：销毁后 对象成功销毁了
+
+            Vue的生命周期函数会自动执行的
+            需求：希望页面一打开，就发送请求加载后台响应的数据，并将后台响应的数据绑定到视图上显示出来。
+                因此发起请求：最晚可以选择mounted，也可以选择beforeMount，最早created
+    -->
+    <div id="app">
+        <span id="spanId">{{msg}}</span>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                msg:"Hello Vue..."
+            },
+            methods:{
+
+            },
+            beforeCreate:function () {
+                console.log("===beforeCreate===");
+                //正常情况下：this表示vue对象  但是此时vue对象还没有被创建成功
+                console.log(this.msg);
+            },
+            created:function () {
+                console.log("===created===");
+                console.log(this.msg);
+            },
+            beforeMount:function () {
+                console.log("===beforeMount===");
+                console.log(document.getElementById("spanId").innerHTML);
+            },
+            mounted:function () {
+                console.log("===mounted===");
+                console.log(document.getElementById("spanId").innerHTML);
+            },
+            beforeDestroy:function () {
+                console.log("===beforeDestroy===");
+            },
+            destroyed:function () {
+                console.log("===destroyed===");
+            }
+        });
+
+        //手动销毁vue对象
+        //vm.$destroy();
+    </script>
+</body>
+</html>

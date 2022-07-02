@@ -1,0 +1,999 @@
+16:46:50,001 DEBUG BooleanConverter:353 - Setting default value: false
+16:46:50,004 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+16:46:50,004 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+16:46:50,006 DEBUG ByteConverter:353 - Setting default value: 0
+16:46:50,006 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+16:46:50,007 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+16:46:50,007 DEBUG CharacterConverter:353 - Setting default value:  
+16:46:50,007 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+16:46:50,007 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+16:46:50,008 DEBUG DoubleConverter:353 - Setting default value: 0
+16:46:50,008 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+16:46:50,008 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+16:46:50,009 DEBUG FloatConverter:353 - Setting default value: 0
+16:46:50,009 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+16:46:50,009 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+16:46:50,009 DEBUG IntegerConverter:353 - Setting default value: 0
+16:46:50,010 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+16:46:50,010 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+16:46:50,011 DEBUG LongConverter:353 - Setting default value: 0
+16:46:50,011 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+16:46:50,011 DEBUG LongConverter:171 -     Converted to Long value '0'
+16:46:50,011 DEBUG ShortConverter:353 - Setting default value: 0
+16:46:50,011 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+16:46:50,011 DEBUG ShortConverter:171 -     Converted to Short value '0'
+16:46:50,013 DEBUG BigDecimalConverter:353 - Setting default value: 0.0
+16:46:50,013 DEBUG BigDecimalConverter:140 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+16:46:50,013 DEBUG BigDecimalConverter:162 -     No conversion required, value is already a BigDecimal
+16:46:50,014 DEBUG BigIntegerConverter:353 - Setting default value: 0
+16:46:50,014 DEBUG BigIntegerConverter:140 - Converting 'BigInteger' value '0' to type 'BigInteger'
+16:46:50,014 DEBUG BigIntegerConverter:162 -     No conversion required, value is already a BigInteger
+16:46:50,014 DEBUG BooleanConverter:353 - Setting default value: false
+16:46:50,014 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+16:46:50,014 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+16:46:50,015 DEBUG ByteConverter:353 - Setting default value: 0
+16:46:50,015 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+16:46:50,015 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+16:46:50,015 DEBUG CharacterConverter:353 - Setting default value:  
+16:46:50,015 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+16:46:50,015 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+16:46:50,016 DEBUG DoubleConverter:353 - Setting default value: 0
+16:46:50,016 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+16:46:50,016 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+16:46:50,016 DEBUG FloatConverter:353 - Setting default value: 0
+16:46:50,016 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+16:46:50,017 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+16:46:50,017 DEBUG IntegerConverter:353 - Setting default value: 0
+16:46:50,017 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+16:46:50,017 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+16:46:50,017 DEBUG LongConverter:353 - Setting default value: 0
+16:46:50,017 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+16:46:50,018 DEBUG LongConverter:171 -     Converted to Long value '0'
+16:46:50,018 DEBUG ShortConverter:353 - Setting default value: 0
+16:46:50,018 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+16:46:50,018 DEBUG ShortConverter:171 -     Converted to Short value '0'
+16:46:50,019 DEBUG StringConverter:353 - Setting default value: 
+16:46:50,019 DEBUG StringConverter:140 - Converting 'String' value '' to type 'String'
+16:46:50,024 DEBUG ArrayConverter:353 - Setting default value: [Z@6d6a5fb7
+16:46:50,024 DEBUG ArrayConverter:140 - Converting 'boolean[]' value '[Z@6d6a5fb7' to type 'boolean[]'
+16:46:50,024 DEBUG ArrayConverter:162 -     No conversion required, value is already a boolean[]
+16:46:50,025 DEBUG ArrayConverter:353 - Setting default value: [B@350a5c70
+16:46:50,025 DEBUG ArrayConverter:140 - Converting 'byte[]' value '[B@350a5c70' to type 'byte[]'
+16:46:50,025 DEBUG ArrayConverter:162 -     No conversion required, value is already a byte[]
+16:46:50,025 DEBUG ArrayConverter:353 - Setting default value: [C@29c60029
+16:46:50,025 DEBUG ArrayConverter:140 - Converting 'char[]' value '[C@29c60029' to type 'char[]'
+16:46:50,027 DEBUG ArrayConverter:162 -     No conversion required, value is already a char[]
+16:46:50,027 DEBUG ArrayConverter:353 - Setting default value: [D@2dc1bc10
+16:46:50,028 DEBUG ArrayConverter:140 - Converting 'double[]' value '[D@2dc1bc10' to type 'double[]'
+16:46:50,028 DEBUG ArrayConverter:162 -     No conversion required, value is already a double[]
+16:46:50,028 DEBUG ArrayConverter:353 - Setting default value: [F@12e9c9f8
+16:46:50,028 DEBUG ArrayConverter:140 - Converting 'float[]' value '[F@12e9c9f8' to type 'float[]'
+16:46:50,028 DEBUG ArrayConverter:162 -     No conversion required, value is already a float[]
+16:46:50,028 DEBUG ArrayConverter:353 - Setting default value: [I@7567ee09
+16:46:50,029 DEBUG ArrayConverter:140 - Converting 'int[]' value '[I@7567ee09' to type 'int[]'
+16:46:50,029 DEBUG ArrayConverter:162 -     No conversion required, value is already a int[]
+16:46:50,029 DEBUG ArrayConverter:353 - Setting default value: [J@6cb97fc4
+16:46:50,030 DEBUG ArrayConverter:140 - Converting 'long[]' value '[J@6cb97fc4' to type 'long[]'
+16:46:50,030 DEBUG ArrayConverter:162 -     No conversion required, value is already a long[]
+16:46:50,030 DEBUG ArrayConverter:353 - Setting default value: [S@4cb87f7f
+16:46:50,030 DEBUG ArrayConverter:140 - Converting 'short[]' value '[S@4cb87f7f' to type 'short[]'
+16:46:50,030 DEBUG ArrayConverter:162 -     No conversion required, value is already a short[]
+16:46:50,030 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigDecimal;@10c2c919
+16:46:50,030 DEBUG ArrayConverter:140 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@10c2c919' to type 'BigDecimal[]'
+16:46:50,031 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigDecimal[]
+16:46:50,031 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigInteger;@7d7f7976
+16:46:50,031 DEBUG ArrayConverter:140 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@7d7f7976' to type 'BigInteger[]'
+16:46:50,031 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigInteger[]
+16:46:50,031 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Boolean;@74bf377f
+16:46:50,031 DEBUG ArrayConverter:140 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@74bf377f' to type 'Boolean[]'
+16:46:50,031 DEBUG ArrayConverter:162 -     No conversion required, value is already a Boolean[]
+16:46:50,032 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Byte;@53e68e59
+16:46:50,032 DEBUG ArrayConverter:140 - Converting 'Byte[]' value '[Ljava.lang.Byte;@53e68e59' to type 'Byte[]'
+16:46:50,032 DEBUG ArrayConverter:162 -     No conversion required, value is already a Byte[]
+16:46:50,032 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Character;@31a2c08b
+16:46:50,032 DEBUG ArrayConverter:140 - Converting 'Character[]' value '[Ljava.lang.Character;@31a2c08b' to type 'Character[]'
+16:46:50,032 DEBUG ArrayConverter:162 -     No conversion required, value is already a Character[]
+16:46:50,033 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Double;@24bd8b1c
+16:46:50,033 DEBUG ArrayConverter:140 - Converting 'Double[]' value '[Ljava.lang.Double;@24bd8b1c' to type 'Double[]'
+16:46:50,033 DEBUG ArrayConverter:162 -     No conversion required, value is already a Double[]
+16:46:50,033 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Float;@67168b58
+16:46:50,033 DEBUG ArrayConverter:140 - Converting 'Float[]' value '[Ljava.lang.Float;@67168b58' to type 'Float[]'
+16:46:50,033 DEBUG ArrayConverter:162 -     No conversion required, value is already a Float[]
+16:46:50,033 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Integer;@1e4f47ea
+16:46:50,034 DEBUG ArrayConverter:140 - Converting 'Integer[]' value '[Ljava.lang.Integer;@1e4f47ea' to type 'Integer[]'
+16:46:50,034 DEBUG ArrayConverter:162 -     No conversion required, value is already a Integer[]
+16:46:50,034 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Long;@30d0d7f5
+16:46:50,034 DEBUG ArrayConverter:140 - Converting 'Long[]' value '[Ljava.lang.Long;@30d0d7f5' to type 'Long[]'
+16:46:50,034 DEBUG ArrayConverter:162 -     No conversion required, value is already a Long[]
+16:46:50,035 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Short;@14fc0b05
+16:46:50,035 DEBUG ArrayConverter:140 - Converting 'Short[]' value '[Ljava.lang.Short;@14fc0b05' to type 'Short[]'
+16:46:50,035 DEBUG ArrayConverter:162 -     No conversion required, value is already a Short[]
+16:46:50,035 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.String;@3f131712
+16:46:50,035 DEBUG ArrayConverter:140 - Converting 'String[]' value '[Ljava.lang.String;@3f131712' to type 'String[]'
+16:46:50,035 DEBUG ArrayConverter:162 -     No conversion required, value is already a String[]
+16:46:50,035 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Class;@cdfa55f
+16:46:50,035 DEBUG ArrayConverter:140 - Converting 'Class[]' value '[Ljava.lang.Class;@cdfa55f' to type 'Class[]'
+16:46:50,036 DEBUG ArrayConverter:162 -     No conversion required, value is already a Class[]
+16:46:50,036 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Date;@788f23e2
+16:46:50,036 DEBUG ArrayConverter:140 - Converting 'Date[]' value '[Ljava.util.Date;@788f23e2' to type 'Date[]'
+16:46:50,036 DEBUG ArrayConverter:162 -     No conversion required, value is already a Date[]
+16:46:50,036 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Calendar;@6a5f56c
+16:46:50,036 DEBUG ArrayConverter:140 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@6a5f56c' to type 'Calendar[]'
+16:46:50,036 DEBUG ArrayConverter:162 -     No conversion required, value is already a Calendar[]
+16:46:50,037 DEBUG ArrayConverter:353 - Setting default value: [Ljava.io.File;@76b0e09f
+16:46:50,037 DEBUG ArrayConverter:140 - Converting 'java.io.File[]' value '[Ljava.io.File;@76b0e09f' to type 'java.io.File[]'
+16:46:50,037 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.io.File[]
+16:46:50,037 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Date;@30bf0ce2
+16:46:50,037 DEBUG ArrayConverter:140 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@30bf0ce2' to type 'java.sql.Date[]'
+16:46:50,038 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Date[]
+16:46:50,038 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Time;@3c4b7ee4
+16:46:50,038 DEBUG ArrayConverter:140 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@3c4b7ee4' to type 'java.sql.Time[]'
+16:46:50,038 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Time[]
+16:46:50,039 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Timestamp;@293fcc4a
+16:46:50,039 DEBUG ArrayConverter:140 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@293fcc4a' to type 'java.sql.Timestamp[]'
+16:46:50,039 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Timestamp[]
+16:46:50,040 DEBUG ArrayConverter:353 - Setting default value: [Ljava.net.URL;@758f3284
+16:46:50,040 DEBUG ArrayConverter:140 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@758f3284' to type 'java.net.URL[]'
+16:46:50,040 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.net.URL[]
+16:46:50,045 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@d8c9831, password=[Ljava.lang.String;@15ebbe59})
+16:46:50,050 DEBUG ConvertUtils:481 - Convert string 'zhangsan' to class 'java.lang.String'
+16:46:50,050 DEBUG StringConverter:140 - Converting 'String' value 'zhangsan' to type 'String'
+16:46:50,051 DEBUG ConvertUtils:481 - Convert string '1234' to class 'java.lang.String'
+16:46:50,052 DEBUG StringConverter:140 - Converting 'String' value '1234' to type 'String'
+16:46:50,086 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:46:50,259 DEBUG VFS:111 - Class not found: org.jboss.vfs.VFS
+16:46:50,259 DEBUG JBoss6VFS:142 - JBoss 6 VFS API is not available in this environment.
+16:46:50,260 DEBUG VFS:111 - Class not found: org.jboss.vfs.VirtualFile
+16:46:50,261 DEBUG VFS:63 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+16:46:50,262 DEBUG VFS:77 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+16:46:50,262 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:46:50,262 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:46:50,296 DEBUG DefaultVFS:102 - Reader entry: User.class
+16:46:50,297 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:46:50,297 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+16:46:50,297 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+16:46:50,299 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+16:46:50,302 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+16:46:50,330 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:46:50,330 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:46:50,330 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:46:50,330 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:46:50,332 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:46:50,332 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:46:50,335 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+16:46:50,335 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+16:46:50,336 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:46:50,336 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+16:46:50,336 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+16:46:50,337 DEBUG DefaultVFS:102 - Reader entry: ����   4  	 
+16:46:50,337 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+16:46:50,337 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+16:46:50,338 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+16:46:50,338 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+16:46:50,408 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+16:46:50,636 DEBUG PooledDataSource:406 - Created connection 1661379618.
+16:46:50,636 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6306a422]
+16:46:50,639 DEBUG selectByUsername:159 - ==>  Preparing: select * from tb_user where username=? 
+16:46:50,659 DEBUG selectByUsername:159 - ==> Parameters: zhangsan(String)
+16:46:50,670 DEBUG selectByUsername:159 - <==      Total: 1
+16:46:50,671 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6306a422]
+16:46:50,671 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6306a422]
+16:46:50,672 DEBUG PooledDataSource:363 - Returned connection 1661379618 to pool.
+16:47:02,167 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@938b135, password=[Ljava.lang.String;@7ff4e62})
+16:47:02,168 DEBUG ConvertUtils:481 - Convert string 'wangwu' to class 'java.lang.String'
+16:47:02,169 DEBUG StringConverter:140 - Converting 'String' value 'wangwu' to type 'String'
+16:47:02,170 DEBUG ConvertUtils:481 - Convert string '123' to class 'java.lang.String'
+16:47:02,170 DEBUG StringConverter:140 - Converting 'String' value '123' to type 'String'
+16:47:02,182 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:47:02,182 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:47:02,183 DEBUG DefaultVFS:102 - Reader entry: User.class
+16:47:02,184 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:47:02,184 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+16:47:02,184 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+16:47:02,184 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+16:47:02,185 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+16:47:02,188 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:02,188 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:02,188 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:02,188 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:02,189 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:47:02,189 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:47:02,190 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+16:47:02,190 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+16:47:02,190 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:47:02,190 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+16:47:02,190 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+16:47:02,191 DEBUG DefaultVFS:102 - Reader entry: ����   4  	 
+16:47:02,191 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+16:47:02,191 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+16:47:02,192 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+16:47:02,192 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+16:47:02,200 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+16:47:02,207 DEBUG PooledDataSource:406 - Created connection 1392654842.
+16:47:02,207 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@530239fa]
+16:47:02,207 DEBUG selectByUsername:159 - ==>  Preparing: select * from tb_user where username=? 
+16:47:02,208 DEBUG selectByUsername:159 - ==> Parameters: wangwu(String)
+16:47:02,210 DEBUG selectByUsername:159 - <==      Total: 0
+16:47:02,210 DEBUG add:159 - ==>  Preparing: insert into tb_user values(null,?,?) 
+16:47:02,211 DEBUG add:159 - ==> Parameters: wangwu(String), 123(String)
+16:47:02,212 DEBUG add:159 - <==    Updates: 1
+16:47:02,212 DEBUG JdbcTransaction:70 - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@530239fa]
+16:47:02,214 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@530239fa]
+16:47:02,215 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@530239fa]
+16:47:02,215 DEBUG PooledDataSource:363 - Returned connection 1392654842 to pool.
+16:47:48,713 DEBUG BooleanConverter:353 - Setting default value: false
+16:47:48,714 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+16:47:48,715 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+16:47:48,717 DEBUG ByteConverter:353 - Setting default value: 0
+16:47:48,717 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+16:47:48,717 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+16:47:48,717 DEBUG CharacterConverter:353 - Setting default value:  
+16:47:48,718 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+16:47:48,718 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+16:47:48,718 DEBUG DoubleConverter:353 - Setting default value: 0
+16:47:48,718 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+16:47:48,719 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+16:47:48,719 DEBUG FloatConverter:353 - Setting default value: 0
+16:47:48,719 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+16:47:48,720 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+16:47:48,720 DEBUG IntegerConverter:353 - Setting default value: 0
+16:47:48,721 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+16:47:48,721 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+16:47:48,722 DEBUG LongConverter:353 - Setting default value: 0
+16:47:48,722 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+16:47:48,722 DEBUG LongConverter:171 -     Converted to Long value '0'
+16:47:48,722 DEBUG ShortConverter:353 - Setting default value: 0
+16:47:48,722 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+16:47:48,722 DEBUG ShortConverter:171 -     Converted to Short value '0'
+16:47:48,724 DEBUG BigDecimalConverter:353 - Setting default value: 0.0
+16:47:48,724 DEBUG BigDecimalConverter:140 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+16:47:48,724 DEBUG BigDecimalConverter:162 -     No conversion required, value is already a BigDecimal
+16:47:48,724 DEBUG BigIntegerConverter:353 - Setting default value: 0
+16:47:48,725 DEBUG BigIntegerConverter:140 - Converting 'BigInteger' value '0' to type 'BigInteger'
+16:47:48,725 DEBUG BigIntegerConverter:162 -     No conversion required, value is already a BigInteger
+16:47:48,725 DEBUG BooleanConverter:353 - Setting default value: false
+16:47:48,725 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+16:47:48,725 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+16:47:48,725 DEBUG ByteConverter:353 - Setting default value: 0
+16:47:48,725 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+16:47:48,726 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+16:47:48,726 DEBUG CharacterConverter:353 - Setting default value:  
+16:47:48,726 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+16:47:48,726 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+16:47:48,726 DEBUG DoubleConverter:353 - Setting default value: 0
+16:47:48,726 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+16:47:48,726 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+16:47:48,727 DEBUG FloatConverter:353 - Setting default value: 0
+16:47:48,727 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+16:47:48,727 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+16:47:48,727 DEBUG IntegerConverter:353 - Setting default value: 0
+16:47:48,727 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+16:47:48,727 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+16:47:48,727 DEBUG LongConverter:353 - Setting default value: 0
+16:47:48,727 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+16:47:48,728 DEBUG LongConverter:171 -     Converted to Long value '0'
+16:47:48,728 DEBUG ShortConverter:353 - Setting default value: 0
+16:47:48,728 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+16:47:48,728 DEBUG ShortConverter:171 -     Converted to Short value '0'
+16:47:48,728 DEBUG StringConverter:353 - Setting default value: 
+16:47:48,728 DEBUG StringConverter:140 - Converting 'String' value '' to type 'String'
+16:47:48,732 DEBUG ArrayConverter:353 - Setting default value: [Z@53c592b1
+16:47:48,732 DEBUG ArrayConverter:140 - Converting 'boolean[]' value '[Z@53c592b1' to type 'boolean[]'
+16:47:48,732 DEBUG ArrayConverter:162 -     No conversion required, value is already a boolean[]
+16:47:48,732 DEBUG ArrayConverter:353 - Setting default value: [B@7f721b6e
+16:47:48,732 DEBUG ArrayConverter:140 - Converting 'byte[]' value '[B@7f721b6e' to type 'byte[]'
+16:47:48,733 DEBUG ArrayConverter:162 -     No conversion required, value is already a byte[]
+16:47:48,733 DEBUG ArrayConverter:353 - Setting default value: [C@568305da
+16:47:48,733 DEBUG ArrayConverter:140 - Converting 'char[]' value '[C@568305da' to type 'char[]'
+16:47:48,733 DEBUG ArrayConverter:162 -     No conversion required, value is already a char[]
+16:47:48,733 DEBUG ArrayConverter:353 - Setting default value: [D@455c642d
+16:47:48,733 DEBUG ArrayConverter:140 - Converting 'double[]' value '[D@455c642d' to type 'double[]'
+16:47:48,733 DEBUG ArrayConverter:162 -     No conversion required, value is already a double[]
+16:47:48,734 DEBUG ArrayConverter:353 - Setting default value: [F@3af3262d
+16:47:48,734 DEBUG ArrayConverter:140 - Converting 'float[]' value '[F@3af3262d' to type 'float[]'
+16:47:48,734 DEBUG ArrayConverter:162 -     No conversion required, value is already a float[]
+16:47:48,734 DEBUG ArrayConverter:353 - Setting default value: [I@5535f376
+16:47:48,734 DEBUG ArrayConverter:140 - Converting 'int[]' value '[I@5535f376' to type 'int[]'
+16:47:48,734 DEBUG ArrayConverter:162 -     No conversion required, value is already a int[]
+16:47:48,734 DEBUG ArrayConverter:353 - Setting default value: [J@1b5691df
+16:47:48,734 DEBUG ArrayConverter:140 - Converting 'long[]' value '[J@1b5691df' to type 'long[]'
+16:47:48,735 DEBUG ArrayConverter:162 -     No conversion required, value is already a long[]
+16:47:48,735 DEBUG ArrayConverter:353 - Setting default value: [S@3d8de394
+16:47:48,735 DEBUG ArrayConverter:140 - Converting 'short[]' value '[S@3d8de394' to type 'short[]'
+16:47:48,735 DEBUG ArrayConverter:162 -     No conversion required, value is already a short[]
+16:47:48,735 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigDecimal;@1e6c7846
+16:47:48,735 DEBUG ArrayConverter:140 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@1e6c7846' to type 'BigDecimal[]'
+16:47:48,735 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigDecimal[]
+16:47:48,736 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigInteger;@4bcf2b9f
+16:47:48,736 DEBUG ArrayConverter:140 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@4bcf2b9f' to type 'BigInteger[]'
+16:47:48,736 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigInteger[]
+16:47:48,736 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Boolean;@64df050e
+16:47:48,736 DEBUG ArrayConverter:140 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@64df050e' to type 'Boolean[]'
+16:47:48,736 DEBUG ArrayConverter:162 -     No conversion required, value is already a Boolean[]
+16:47:48,736 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Byte;@76d3ba9f
+16:47:48,737 DEBUG ArrayConverter:140 - Converting 'Byte[]' value '[Ljava.lang.Byte;@76d3ba9f' to type 'Byte[]'
+16:47:48,737 DEBUG ArrayConverter:162 -     No conversion required, value is already a Byte[]
+16:47:48,737 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Character;@144b5273
+16:47:48,737 DEBUG ArrayConverter:140 - Converting 'Character[]' value '[Ljava.lang.Character;@144b5273' to type 'Character[]'
+16:47:48,737 DEBUG ArrayConverter:162 -     No conversion required, value is already a Character[]
+16:47:48,737 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Double;@2c94f78f
+16:47:48,737 DEBUG ArrayConverter:140 - Converting 'Double[]' value '[Ljava.lang.Double;@2c94f78f' to type 'Double[]'
+16:47:48,738 DEBUG ArrayConverter:162 -     No conversion required, value is already a Double[]
+16:47:48,738 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Float;@6ca47d4f
+16:47:48,738 DEBUG ArrayConverter:140 - Converting 'Float[]' value '[Ljava.lang.Float;@6ca47d4f' to type 'Float[]'
+16:47:48,738 DEBUG ArrayConverter:162 -     No conversion required, value is already a Float[]
+16:47:48,738 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Integer;@6528b5f5
+16:47:48,738 DEBUG ArrayConverter:140 - Converting 'Integer[]' value '[Ljava.lang.Integer;@6528b5f5' to type 'Integer[]'
+16:47:48,739 DEBUG ArrayConverter:162 -     No conversion required, value is already a Integer[]
+16:47:48,739 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Long;@1b77eccf
+16:47:48,739 DEBUG ArrayConverter:140 - Converting 'Long[]' value '[Ljava.lang.Long;@1b77eccf' to type 'Long[]'
+16:47:48,739 DEBUG ArrayConverter:162 -     No conversion required, value is already a Long[]
+16:47:48,739 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Short;@d94bde4
+16:47:48,739 DEBUG ArrayConverter:140 - Converting 'Short[]' value '[Ljava.lang.Short;@d94bde4' to type 'Short[]'
+16:47:48,739 DEBUG ArrayConverter:162 -     No conversion required, value is already a Short[]
+16:47:48,740 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.String;@48decffe
+16:47:48,740 DEBUG ArrayConverter:140 - Converting 'String[]' value '[Ljava.lang.String;@48decffe' to type 'String[]'
+16:47:48,740 DEBUG ArrayConverter:162 -     No conversion required, value is already a String[]
+16:47:48,740 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Class;@7c4c823d
+16:47:48,740 DEBUG ArrayConverter:140 - Converting 'Class[]' value '[Ljava.lang.Class;@7c4c823d' to type 'Class[]'
+16:47:48,740 DEBUG ArrayConverter:162 -     No conversion required, value is already a Class[]
+16:47:48,740 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Date;@549f6bcd
+16:47:48,741 DEBUG ArrayConverter:140 - Converting 'Date[]' value '[Ljava.util.Date;@549f6bcd' to type 'Date[]'
+16:47:48,741 DEBUG ArrayConverter:162 -     No conversion required, value is already a Date[]
+16:47:48,741 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Calendar;@5ce4267f
+16:47:48,741 DEBUG ArrayConverter:140 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@5ce4267f' to type 'Calendar[]'
+16:47:48,741 DEBUG ArrayConverter:162 -     No conversion required, value is already a Calendar[]
+16:47:48,741 DEBUG ArrayConverter:353 - Setting default value: [Ljava.io.File;@6b4fd0ee
+16:47:48,742 DEBUG ArrayConverter:140 - Converting 'java.io.File[]' value '[Ljava.io.File;@6b4fd0ee' to type 'java.io.File[]'
+16:47:48,742 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.io.File[]
+16:47:48,742 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Date;@29862e6e
+16:47:48,742 DEBUG ArrayConverter:140 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@29862e6e' to type 'java.sql.Date[]'
+16:47:48,742 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Date[]
+16:47:48,743 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Time;@706381a9
+16:47:48,743 DEBUG ArrayConverter:140 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@706381a9' to type 'java.sql.Time[]'
+16:47:48,743 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Time[]
+16:47:48,743 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Timestamp;@5d7d9710
+16:47:48,743 DEBUG ArrayConverter:140 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@5d7d9710' to type 'java.sql.Timestamp[]'
+16:47:48,743 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Timestamp[]
+16:47:48,744 DEBUG ArrayConverter:353 - Setting default value: [Ljava.net.URL;@23f95315
+16:47:48,744 DEBUG ArrayConverter:140 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@23f95315' to type 'java.net.URL[]'
+16:47:48,744 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.net.URL[]
+16:47:48,749 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@579a5718, password=[Ljava.lang.String;@302c5502})
+16:47:48,751 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+16:47:48,751 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+16:47:48,752 DEBUG ConvertUtils:481 - Convert string '123456' to class 'java.lang.String'
+16:47:48,752 DEBUG StringConverter:140 - Converting 'String' value '123456' to type 'String'
+16:47:48,782 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:47:48,941 DEBUG VFS:111 - Class not found: org.jboss.vfs.VFS
+16:47:48,941 DEBUG JBoss6VFS:142 - JBoss 6 VFS API is not available in this environment.
+16:47:48,941 DEBUG VFS:111 - Class not found: org.jboss.vfs.VirtualFile
+16:47:48,942 DEBUG VFS:63 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+16:47:48,942 DEBUG VFS:77 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+16:47:48,943 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:47:48,943 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:47:48,971 DEBUG DefaultVFS:102 - Reader entry: User.class
+16:47:48,972 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+16:47:48,972 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+16:47:48,972 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+16:47:48,973 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+16:47:48,975 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+16:47:49,006 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:49,006 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:49,007 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:49,007 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+16:47:49,009 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:47:49,009 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:47:49,011 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+16:47:49,012 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+16:47:49,012 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+16:47:49,012 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+16:47:49,012 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+16:47:49,013 DEBUG DefaultVFS:102 - Reader entry: ����   4  	 
+16:47:49,013 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+16:47:49,013 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+16:47:49,013 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+16:47:49,014 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+16:47:49,079 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+16:47:49,301 DEBUG PooledDataSource:406 - Created connection 1410444740.
+16:47:49,302 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5411adc4]
+16:47:49,305 DEBUG selectByUsername:159 - ==>  Preparing: select * from tb_user where username=? 
+16:47:49,328 DEBUG selectByUsername:159 - ==> Parameters: admin(String)
+16:47:49,337 DEBUG selectByUsername:159 - <==      Total: 0
+16:47:49,338 DEBUG add:159 - ==>  Preparing: insert into tb_user values(null,?,?) 
+16:47:49,339 DEBUG add:159 - ==> Parameters: admin(String), 123456(String)
+16:47:49,340 DEBUG add:159 - <==    Updates: 1
+16:47:49,341 DEBUG JdbcTransaction:70 - Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5411adc4]
+16:47:49,344 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5411adc4]
+16:47:49,344 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5411adc4]
+16:47:49,345 DEBUG PooledDataSource:363 - Returned connection 1410444740 to pool.
+17:01:26,167 DEBUG BooleanConverter:353 - Setting default value: false
+17:01:26,169 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+17:01:26,169 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+17:01:26,170 DEBUG ByteConverter:353 - Setting default value: 0
+17:01:26,170 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+17:01:26,171 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+17:01:26,171 DEBUG CharacterConverter:353 - Setting default value:  
+17:01:26,171 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+17:01:26,171 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+17:01:26,172 DEBUG DoubleConverter:353 - Setting default value: 0
+17:01:26,172 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+17:01:26,172 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+17:01:26,173 DEBUG FloatConverter:353 - Setting default value: 0
+17:01:26,173 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+17:01:26,173 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+17:01:26,173 DEBUG IntegerConverter:353 - Setting default value: 0
+17:01:26,174 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+17:01:26,174 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+17:01:26,175 DEBUG LongConverter:353 - Setting default value: 0
+17:01:26,175 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+17:01:26,175 DEBUG LongConverter:171 -     Converted to Long value '0'
+17:01:26,175 DEBUG ShortConverter:353 - Setting default value: 0
+17:01:26,175 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+17:01:26,176 DEBUG ShortConverter:171 -     Converted to Short value '0'
+17:01:26,177 DEBUG BigDecimalConverter:353 - Setting default value: 0.0
+17:01:26,177 DEBUG BigDecimalConverter:140 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+17:01:26,177 DEBUG BigDecimalConverter:162 -     No conversion required, value is already a BigDecimal
+17:01:26,177 DEBUG BigIntegerConverter:353 - Setting default value: 0
+17:01:26,178 DEBUG BigIntegerConverter:140 - Converting 'BigInteger' value '0' to type 'BigInteger'
+17:01:26,178 DEBUG BigIntegerConverter:162 -     No conversion required, value is already a BigInteger
+17:01:26,178 DEBUG BooleanConverter:353 - Setting default value: false
+17:01:26,178 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+17:01:26,178 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+17:01:26,178 DEBUG ByteConverter:353 - Setting default value: 0
+17:01:26,179 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+17:01:26,179 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+17:01:26,179 DEBUG CharacterConverter:353 - Setting default value:  
+17:01:26,179 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+17:01:26,179 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+17:01:26,179 DEBUG DoubleConverter:353 - Setting default value: 0
+17:01:26,180 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+17:01:26,180 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+17:01:26,180 DEBUG FloatConverter:353 - Setting default value: 0
+17:01:26,180 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+17:01:26,180 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+17:01:26,180 DEBUG IntegerConverter:353 - Setting default value: 0
+17:01:26,181 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+17:01:26,181 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+17:01:26,181 DEBUG LongConverter:353 - Setting default value: 0
+17:01:26,181 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+17:01:26,181 DEBUG LongConverter:171 -     Converted to Long value '0'
+17:01:26,181 DEBUG ShortConverter:353 - Setting default value: 0
+17:01:26,182 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+17:01:26,182 DEBUG ShortConverter:171 -     Converted to Short value '0'
+17:01:26,182 DEBUG StringConverter:353 - Setting default value: 
+17:01:26,182 DEBUG StringConverter:140 - Converting 'String' value '' to type 'String'
+17:01:26,186 DEBUG ArrayConverter:353 - Setting default value: [Z@29cad33f
+17:01:26,186 DEBUG ArrayConverter:140 - Converting 'boolean[]' value '[Z@29cad33f' to type 'boolean[]'
+17:01:26,186 DEBUG ArrayConverter:162 -     No conversion required, value is already a boolean[]
+17:01:26,186 DEBUG ArrayConverter:353 - Setting default value: [B@2f7dc0d3
+17:01:26,187 DEBUG ArrayConverter:140 - Converting 'byte[]' value '[B@2f7dc0d3' to type 'byte[]'
+17:01:26,187 DEBUG ArrayConverter:162 -     No conversion required, value is already a byte[]
+17:01:26,187 DEBUG ArrayConverter:353 - Setting default value: [C@6d9de83
+17:01:26,187 DEBUG ArrayConverter:140 - Converting 'char[]' value '[C@6d9de83' to type 'char[]'
+17:01:26,187 DEBUG ArrayConverter:162 -     No conversion required, value is already a char[]
+17:01:26,187 DEBUG ArrayConverter:353 - Setting default value: [D@4a774d73
+17:01:26,187 DEBUG ArrayConverter:140 - Converting 'double[]' value '[D@4a774d73' to type 'double[]'
+17:01:26,188 DEBUG ArrayConverter:162 -     No conversion required, value is already a double[]
+17:01:26,188 DEBUG ArrayConverter:353 - Setting default value: [F@355b2c29
+17:01:26,188 DEBUG ArrayConverter:140 - Converting 'float[]' value '[F@355b2c29' to type 'float[]'
+17:01:26,188 DEBUG ArrayConverter:162 -     No conversion required, value is already a float[]
+17:01:26,188 DEBUG ArrayConverter:353 - Setting default value: [I@74e11909
+17:01:26,188 DEBUG ArrayConverter:140 - Converting 'int[]' value '[I@74e11909' to type 'int[]'
+17:01:26,188 DEBUG ArrayConverter:162 -     No conversion required, value is already a int[]
+17:01:26,189 DEBUG ArrayConverter:353 - Setting default value: [J@3c04fcd0
+17:01:26,189 DEBUG ArrayConverter:140 - Converting 'long[]' value '[J@3c04fcd0' to type 'long[]'
+17:01:26,189 DEBUG ArrayConverter:162 -     No conversion required, value is already a long[]
+17:01:26,189 DEBUG ArrayConverter:353 - Setting default value: [S@4c6822f6
+17:01:26,189 DEBUG ArrayConverter:140 - Converting 'short[]' value '[S@4c6822f6' to type 'short[]'
+17:01:26,189 DEBUG ArrayConverter:162 -     No conversion required, value is already a short[]
+17:01:26,189 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigDecimal;@203e6536
+17:01:26,190 DEBUG ArrayConverter:140 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@203e6536' to type 'BigDecimal[]'
+17:01:26,190 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigDecimal[]
+17:01:26,190 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigInteger;@47128c48
+17:01:26,190 DEBUG ArrayConverter:140 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@47128c48' to type 'BigInteger[]'
+17:01:26,191 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigInteger[]
+17:01:26,191 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Boolean;@19a4b271
+17:01:26,191 DEBUG ArrayConverter:140 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@19a4b271' to type 'Boolean[]'
+17:01:26,191 DEBUG ArrayConverter:162 -     No conversion required, value is already a Boolean[]
+17:01:26,191 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Byte;@4ea37f49
+17:01:26,191 DEBUG ArrayConverter:140 - Converting 'Byte[]' value '[Ljava.lang.Byte;@4ea37f49' to type 'Byte[]'
+17:01:26,192 DEBUG ArrayConverter:162 -     No conversion required, value is already a Byte[]
+17:01:26,192 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Character;@3b4fdcf9
+17:01:26,192 DEBUG ArrayConverter:140 - Converting 'Character[]' value '[Ljava.lang.Character;@3b4fdcf9' to type 'Character[]'
+17:01:26,192 DEBUG ArrayConverter:162 -     No conversion required, value is already a Character[]
+17:01:26,193 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Double;@75db1a21
+17:01:26,193 DEBUG ArrayConverter:140 - Converting 'Double[]' value '[Ljava.lang.Double;@75db1a21' to type 'Double[]'
+17:01:26,193 DEBUG ArrayConverter:162 -     No conversion required, value is already a Double[]
+17:01:26,193 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Float;@11d96d2a
+17:01:26,193 DEBUG ArrayConverter:140 - Converting 'Float[]' value '[Ljava.lang.Float;@11d96d2a' to type 'Float[]'
+17:01:26,193 DEBUG ArrayConverter:162 -     No conversion required, value is already a Float[]
+17:01:26,194 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Integer;@2730ebed
+17:01:26,194 DEBUG ArrayConverter:140 - Converting 'Integer[]' value '[Ljava.lang.Integer;@2730ebed' to type 'Integer[]'
+17:01:26,194 DEBUG ArrayConverter:162 -     No conversion required, value is already a Integer[]
+17:01:26,194 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Long;@f4645ab
+17:01:26,194 DEBUG ArrayConverter:140 - Converting 'Long[]' value '[Ljava.lang.Long;@f4645ab' to type 'Long[]'
+17:01:26,194 DEBUG ArrayConverter:162 -     No conversion required, value is already a Long[]
+17:01:26,195 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Short;@1a3fae7d
+17:01:26,195 DEBUG ArrayConverter:140 - Converting 'Short[]' value '[Ljava.lang.Short;@1a3fae7d' to type 'Short[]'
+17:01:26,195 DEBUG ArrayConverter:162 -     No conversion required, value is already a Short[]
+17:01:26,195 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.String;@14666829
+17:01:26,195 DEBUG ArrayConverter:140 - Converting 'String[]' value '[Ljava.lang.String;@14666829' to type 'String[]'
+17:01:26,196 DEBUG ArrayConverter:162 -     No conversion required, value is already a String[]
+17:01:26,196 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Class;@2c040dd5
+17:01:26,196 DEBUG ArrayConverter:140 - Converting 'Class[]' value '[Ljava.lang.Class;@2c040dd5' to type 'Class[]'
+17:01:26,196 DEBUG ArrayConverter:162 -     No conversion required, value is already a Class[]
+17:01:26,196 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Date;@4baf026e
+17:01:26,197 DEBUG ArrayConverter:140 - Converting 'Date[]' value '[Ljava.util.Date;@4baf026e' to type 'Date[]'
+17:01:26,197 DEBUG ArrayConverter:162 -     No conversion required, value is already a Date[]
+17:01:26,197 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Calendar;@456baeb5
+17:01:26,197 DEBUG ArrayConverter:140 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@456baeb5' to type 'Calendar[]'
+17:01:26,197 DEBUG ArrayConverter:162 -     No conversion required, value is already a Calendar[]
+17:01:26,198 DEBUG ArrayConverter:353 - Setting default value: [Ljava.io.File;@7a02ae55
+17:01:26,198 DEBUG ArrayConverter:140 - Converting 'java.io.File[]' value '[Ljava.io.File;@7a02ae55' to type 'java.io.File[]'
+17:01:26,198 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.io.File[]
+17:01:26,198 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Date;@5dff58c5
+17:01:26,199 DEBUG ArrayConverter:140 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@5dff58c5' to type 'java.sql.Date[]'
+17:01:26,199 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Date[]
+17:01:26,199 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Time;@1084c58b
+17:01:26,200 DEBUG ArrayConverter:140 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@1084c58b' to type 'java.sql.Time[]'
+17:01:26,200 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Time[]
+17:01:26,200 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Timestamp;@38aaa281
+17:01:26,200 DEBUG ArrayConverter:140 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@38aaa281' to type 'java.sql.Timestamp[]'
+17:01:26,201 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Timestamp[]
+17:01:26,201 DEBUG ArrayConverter:353 - Setting default value: [Ljava.net.URL;@2c6c9d13
+17:01:26,201 DEBUG ArrayConverter:140 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@2c6c9d13' to type 'java.net.URL[]'
+17:01:26,202 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.net.URL[]
+17:01:26,207 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@3e4e9d60, password=[Ljava.lang.String;@461ade9c})
+17:01:26,210 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+17:01:26,210 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+17:01:26,211 DEBUG ConvertUtils:481 - Convert string '123456' to class 'java.lang.String'
+17:01:26,212 DEBUG StringConverter:140 - Converting 'String' value '123456' to type 'String'
+17:01:26,246 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+17:01:26,379 DEBUG VFS:111 - Class not found: org.jboss.vfs.VFS
+17:01:26,379 DEBUG JBoss6VFS:142 - JBoss 6 VFS API is not available in this environment.
+17:01:26,380 DEBUG VFS:111 - Class not found: org.jboss.vfs.VirtualFile
+17:01:26,380 DEBUG VFS:63 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+17:01:26,381 DEBUG VFS:77 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+17:01:26,381 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+17:01:26,381 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+17:01:26,408 DEBUG DefaultVFS:102 - Reader entry: User.class
+17:01:26,409 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+17:01:26,410 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+17:01:26,410 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+17:01:26,411 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+17:01:26,412 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+17:01:26,439 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:26,439 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:26,439 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:26,439 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:26,442 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+17:01:26,442 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+17:01:26,444 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+17:01:26,444 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+17:01:26,445 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+17:01:26,445 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+17:01:26,445 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+17:01:26,445 DEBUG DefaultVFS:102 - Reader entry: ����   4 
+17:01:26,446 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+17:01:26,446 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+17:01:26,446 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+17:01:26,447 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+17:01:26,527 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+17:01:26,745 DEBUG PooledDataSource:406 - Created connection 21511218.
+17:01:26,745 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1483c32]
+17:01:26,748 DEBUG select:159 - ==>  Preparing: select * from tb_user where username=? and password=? 
+17:01:26,773 DEBUG select:159 - ==> Parameters: admin(String), 123456(String)
+17:01:26,784 DEBUG select:159 - <==      Total: 1
+17:01:26,785 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1483c32]
+17:01:26,786 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@1483c32]
+17:01:26,786 DEBUG PooledDataSource:363 - Returned connection 21511218 to pool.
+17:01:34,537 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@4b9fa805, password=[Ljava.lang.String;@45585f06})
+17:01:34,538 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+17:01:34,538 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+17:01:34,539 DEBUG ConvertUtils:481 - Convert string '123' to class 'java.lang.String'
+17:01:34,539 DEBUG StringConverter:140 - Converting 'String' value '123' to type 'String'
+17:01:34,545 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+17:01:34,546 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+17:01:34,546 DEBUG DefaultVFS:102 - Reader entry: User.class
+17:01:34,547 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean
+17:01:34,547 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+17:01:34,547 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/bean/User.class
+17:01:34,548 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+17:01:34,549 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+17:01:34,552 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:34,552 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:34,552 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:34,553 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+17:01:34,553 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+17:01:34,553 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+17:01:34,554 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+17:01:34,554 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+17:01:34,555 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao
+17:01:34,555 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+17:01:34,555 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.class
+17:01:34,555 DEBUG DefaultVFS:102 - Reader entry: ����   4 
+17:01:34,556 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+17:01:34,556 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day24/day24_case/target/classes/com/itheima/dao/UserDao.xml
+17:01:34,556 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+17:01:34,556 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+17:01:34,567 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+17:01:34,573 DEBUG PooledDataSource:406 - Created connection 1570621314.
+17:01:34,574 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5d9dc782]
+17:01:34,574 DEBUG select:159 - ==>  Preparing: select * from tb_user where username=? and password=? 
+17:01:34,575 DEBUG select:159 - ==> Parameters: admin(String), 123(String)
+17:01:34,577 DEBUG select:159 - <==      Total: 0
+17:01:34,578 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5d9dc782]
+17:01:34,579 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5d9dc782]
+17:01:34,579 DEBUG PooledDataSource:363 - Returned connection 1570621314 to pool.
+15:21:23,034 DEBUG BooleanConverter:353 - Setting default value: false
+15:21:23,036 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+15:21:23,036 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+15:21:23,038 DEBUG ByteConverter:353 - Setting default value: 0
+15:21:23,038 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+15:21:23,038 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+15:21:23,038 DEBUG CharacterConverter:353 - Setting default value:  
+15:21:23,039 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+15:21:23,039 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+15:21:23,040 DEBUG DoubleConverter:353 - Setting default value: 0
+15:21:23,040 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+15:21:23,040 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+15:21:23,040 DEBUG FloatConverter:353 - Setting default value: 0
+15:21:23,040 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+15:21:23,041 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+15:21:23,041 DEBUG IntegerConverter:353 - Setting default value: 0
+15:21:23,042 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+15:21:23,042 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+15:21:23,042 DEBUG LongConverter:353 - Setting default value: 0
+15:21:23,043 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+15:21:23,043 DEBUG LongConverter:171 -     Converted to Long value '0'
+15:21:23,044 DEBUG ShortConverter:353 - Setting default value: 0
+15:21:23,044 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+15:21:23,045 DEBUG ShortConverter:171 -     Converted to Short value '0'
+15:21:23,047 DEBUG BigDecimalConverter:353 - Setting default value: 0.0
+15:21:23,047 DEBUG BigDecimalConverter:140 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+15:21:23,047 DEBUG BigDecimalConverter:162 -     No conversion required, value is already a BigDecimal
+15:21:23,047 DEBUG BigIntegerConverter:353 - Setting default value: 0
+15:21:23,048 DEBUG BigIntegerConverter:140 - Converting 'BigInteger' value '0' to type 'BigInteger'
+15:21:23,048 DEBUG BigIntegerConverter:162 -     No conversion required, value is already a BigInteger
+15:21:23,048 DEBUG BooleanConverter:353 - Setting default value: false
+15:21:23,048 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+15:21:23,048 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+15:21:23,048 DEBUG ByteConverter:353 - Setting default value: 0
+15:21:23,049 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+15:21:23,049 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+15:21:23,049 DEBUG CharacterConverter:353 - Setting default value:  
+15:21:23,049 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+15:21:23,049 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+15:21:23,049 DEBUG DoubleConverter:353 - Setting default value: 0
+15:21:23,050 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+15:21:23,050 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+15:21:23,050 DEBUG FloatConverter:353 - Setting default value: 0
+15:21:23,050 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+15:21:23,050 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+15:21:23,050 DEBUG IntegerConverter:353 - Setting default value: 0
+15:21:23,050 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+15:21:23,051 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+15:21:23,051 DEBUG LongConverter:353 - Setting default value: 0
+15:21:23,051 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+15:21:23,051 DEBUG LongConverter:171 -     Converted to Long value '0'
+15:21:23,051 DEBUG ShortConverter:353 - Setting default value: 0
+15:21:23,051 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+15:21:23,051 DEBUG ShortConverter:171 -     Converted to Short value '0'
+15:21:23,052 DEBUG StringConverter:353 - Setting default value: 
+15:21:23,052 DEBUG StringConverter:140 - Converting 'String' value '' to type 'String'
+15:21:23,056 DEBUG ArrayConverter:353 - Setting default value: [Z@e92f4f4
+15:21:23,057 DEBUG ArrayConverter:140 - Converting 'boolean[]' value '[Z@e92f4f4' to type 'boolean[]'
+15:21:23,057 DEBUG ArrayConverter:162 -     No conversion required, value is already a boolean[]
+15:21:23,057 DEBUG ArrayConverter:353 - Setting default value: [B@218991f5
+15:21:23,057 DEBUG ArrayConverter:140 - Converting 'byte[]' value '[B@218991f5' to type 'byte[]'
+15:21:23,057 DEBUG ArrayConverter:162 -     No conversion required, value is already a byte[]
+15:21:23,057 DEBUG ArrayConverter:353 - Setting default value: [C@e6ad968
+15:21:23,058 DEBUG ArrayConverter:140 - Converting 'char[]' value '[C@e6ad968' to type 'char[]'
+15:21:23,058 DEBUG ArrayConverter:162 -     No conversion required, value is already a char[]
+15:21:23,058 DEBUG ArrayConverter:353 - Setting default value: [D@1c902c51
+15:21:23,058 DEBUG ArrayConverter:140 - Converting 'double[]' value '[D@1c902c51' to type 'double[]'
+15:21:23,058 DEBUG ArrayConverter:162 -     No conversion required, value is already a double[]
+15:21:23,058 DEBUG ArrayConverter:353 - Setting default value: [F@53c4e63
+15:21:23,058 DEBUG ArrayConverter:140 - Converting 'float[]' value '[F@53c4e63' to type 'float[]'
+15:21:23,059 DEBUG ArrayConverter:162 -     No conversion required, value is already a float[]
+15:21:23,059 DEBUG ArrayConverter:353 - Setting default value: [I@68576108
+15:21:23,059 DEBUG ArrayConverter:140 - Converting 'int[]' value '[I@68576108' to type 'int[]'
+15:21:23,059 DEBUG ArrayConverter:162 -     No conversion required, value is already a int[]
+15:21:23,059 DEBUG ArrayConverter:353 - Setting default value: [J@302e44f3
+15:21:23,059 DEBUG ArrayConverter:140 - Converting 'long[]' value '[J@302e44f3' to type 'long[]'
+15:21:23,060 DEBUG ArrayConverter:162 -     No conversion required, value is already a long[]
+15:21:23,060 DEBUG ArrayConverter:353 - Setting default value: [S@2d411403
+15:21:23,060 DEBUG ArrayConverter:140 - Converting 'short[]' value '[S@2d411403' to type 'short[]'
+15:21:23,060 DEBUG ArrayConverter:162 -     No conversion required, value is already a short[]
+15:21:23,060 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigDecimal;@4a69189e
+15:21:23,060 DEBUG ArrayConverter:140 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@4a69189e' to type 'BigDecimal[]'
+15:21:23,061 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigDecimal[]
+15:21:23,061 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigInteger;@5b2eb9f9
+15:21:23,061 DEBUG ArrayConverter:140 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@5b2eb9f9' to type 'BigInteger[]'
+15:21:23,061 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigInteger[]
+15:21:23,061 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Boolean;@7c450528
+15:21:23,061 DEBUG ArrayConverter:140 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@7c450528' to type 'Boolean[]'
+15:21:23,062 DEBUG ArrayConverter:162 -     No conversion required, value is already a Boolean[]
+15:21:23,062 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Byte;@6022b6b0
+15:21:23,062 DEBUG ArrayConverter:140 - Converting 'Byte[]' value '[Ljava.lang.Byte;@6022b6b0' to type 'Byte[]'
+15:21:23,062 DEBUG ArrayConverter:162 -     No conversion required, value is already a Byte[]
+15:21:23,062 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Character;@18a05b1e
+15:21:23,062 DEBUG ArrayConverter:140 - Converting 'Character[]' value '[Ljava.lang.Character;@18a05b1e' to type 'Character[]'
+15:21:23,063 DEBUG ArrayConverter:162 -     No conversion required, value is already a Character[]
+15:21:23,063 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Double;@4af76b0c
+15:21:23,063 DEBUG ArrayConverter:140 - Converting 'Double[]' value '[Ljava.lang.Double;@4af76b0c' to type 'Double[]'
+15:21:23,063 DEBUG ArrayConverter:162 -     No conversion required, value is already a Double[]
+15:21:23,063 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Float;@5fdd154b
+15:21:23,063 DEBUG ArrayConverter:140 - Converting 'Float[]' value '[Ljava.lang.Float;@5fdd154b' to type 'Float[]'
+15:21:23,063 DEBUG ArrayConverter:162 -     No conversion required, value is already a Float[]
+15:21:23,064 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Integer;@3f6c5014
+15:21:23,064 DEBUG ArrayConverter:140 - Converting 'Integer[]' value '[Ljava.lang.Integer;@3f6c5014' to type 'Integer[]'
+15:21:23,064 DEBUG ArrayConverter:162 -     No conversion required, value is already a Integer[]
+15:21:23,064 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Long;@335ab6a3
+15:21:23,064 DEBUG ArrayConverter:140 - Converting 'Long[]' value '[Ljava.lang.Long;@335ab6a3' to type 'Long[]'
+15:21:23,064 DEBUG ArrayConverter:162 -     No conversion required, value is already a Long[]
+15:21:23,065 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Short;@376e3867
+15:21:23,065 DEBUG ArrayConverter:140 - Converting 'Short[]' value '[Ljava.lang.Short;@376e3867' to type 'Short[]'
+15:21:23,065 DEBUG ArrayConverter:162 -     No conversion required, value is already a Short[]
+15:21:23,065 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.String;@1cca4e5
+15:21:23,065 DEBUG ArrayConverter:140 - Converting 'String[]' value '[Ljava.lang.String;@1cca4e5' to type 'String[]'
+15:21:23,066 DEBUG ArrayConverter:162 -     No conversion required, value is already a String[]
+15:21:23,066 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Class;@12ce5cfd
+15:21:23,066 DEBUG ArrayConverter:140 - Converting 'Class[]' value '[Ljava.lang.Class;@12ce5cfd' to type 'Class[]'
+15:21:23,066 DEBUG ArrayConverter:162 -     No conversion required, value is already a Class[]
+15:21:23,066 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Date;@54a5e3c3
+15:21:23,066 DEBUG ArrayConverter:140 - Converting 'Date[]' value '[Ljava.util.Date;@54a5e3c3' to type 'Date[]'
+15:21:23,066 DEBUG ArrayConverter:162 -     No conversion required, value is already a Date[]
+15:21:23,067 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Calendar;@786f69cb
+15:21:23,067 DEBUG ArrayConverter:140 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@786f69cb' to type 'Calendar[]'
+15:21:23,067 DEBUG ArrayConverter:162 -     No conversion required, value is already a Calendar[]
+15:21:23,067 DEBUG ArrayConverter:353 - Setting default value: [Ljava.io.File;@6366a8a3
+15:21:23,067 DEBUG ArrayConverter:140 - Converting 'java.io.File[]' value '[Ljava.io.File;@6366a8a3' to type 'java.io.File[]'
+15:21:23,068 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.io.File[]
+15:21:23,068 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Date;@7cd1cf88
+15:21:23,068 DEBUG ArrayConverter:140 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@7cd1cf88' to type 'java.sql.Date[]'
+15:21:23,068 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Date[]
+15:21:23,068 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Time;@571307d
+15:21:23,068 DEBUG ArrayConverter:140 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@571307d' to type 'java.sql.Time[]'
+15:21:23,069 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Time[]
+15:21:23,069 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Timestamp;@16b8c9f4
+15:21:23,069 DEBUG ArrayConverter:140 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@16b8c9f4' to type 'java.sql.Timestamp[]'
+15:21:23,069 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Timestamp[]
+15:21:23,069 DEBUG ArrayConverter:353 - Setting default value: [Ljava.net.URL;@6c7cf851
+15:21:23,069 DEBUG ArrayConverter:140 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@6c7cf851' to type 'java.net.URL[]'
+15:21:23,070 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.net.URL[]
+15:21:23,077 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@dc8095d, password=[Ljava.lang.String;@5135a068, validateCode=[Ljava.lang.String;@f38cf06})
+15:21:23,084 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+15:21:23,085 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+15:21:23,086 DEBUG ConvertUtils:481 - Convert string '123456' to class 'java.lang.String'
+15:21:23,087 DEBUG StringConverter:140 - Converting 'String' value '123456' to type 'String'
+15:21:23,129 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:21:23,223 DEBUG VFS:111 - Class not found: org.jboss.vfs.VFS
+15:21:23,223 DEBUG JBoss6VFS:142 - JBoss 6 VFS API is not available in this environment.
+15:21:23,224 DEBUG VFS:111 - Class not found: org.jboss.vfs.VirtualFile
+15:21:23,225 DEBUG VFS:63 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+15:21:23,225 DEBUG VFS:77 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+15:21:23,226 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean
+15:21:23,226 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean
+15:21:23,254 DEBUG DefaultVFS:102 - Reader entry: User.class
+15:21:23,255 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean
+15:21:23,255 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean/User.class
+15:21:23,256 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean/User.class
+15:21:23,257 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+15:21:23,258 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+15:21:23,286 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:21:23,286 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:21:23,286 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:21:23,286 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:21:23,288 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao
+15:21:23,288 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao
+15:21:23,291 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+15:21:23,291 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+15:21:23,291 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao
+15:21:23,291 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.class
+15:21:23,291 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.class
+15:21:23,292 DEBUG DefaultVFS:102 - Reader entry: ����   4 
+15:21:23,292 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.xml
+15:21:23,292 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.xml
+15:21:23,292 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+15:21:23,293 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+15:21:23,364 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+15:21:23,571 DEBUG PooledDataSource:406 - Created connection 215101838.
+15:21:23,571 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@cd2318e]
+15:21:23,573 DEBUG select:159 - ==>  Preparing: select * from tb_user where username=? and password=? 
+15:21:23,593 DEBUG select:159 - ==> Parameters: admin(String), 123456(String)
+15:21:23,614 DEBUG select:159 - <==      Total: 1
+15:21:23,615 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@cd2318e]
+15:21:23,616 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@cd2318e]
+15:21:23,616 DEBUG PooledDataSource:363 - Returned connection 215101838 to pool.
+15:21:36,604 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@e935ffa, password=[Ljava.lang.String;@54b058, validateCode=[Ljava.lang.String;@46b348a})
+15:21:36,605 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+15:21:36,606 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+15:21:36,606 DEBUG ConvertUtils:481 - Convert string '123456' to class 'java.lang.String'
+15:21:36,606 DEBUG StringConverter:140 - Converting 'String' value '123456' to type 'String'
+15:23:01,057 DEBUG BooleanConverter:353 - Setting default value: false
+15:23:01,059 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+15:23:01,059 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+15:23:01,060 DEBUG ByteConverter:353 - Setting default value: 0
+15:23:01,061 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+15:23:01,061 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+15:23:01,061 DEBUG CharacterConverter:353 - Setting default value:  
+15:23:01,062 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+15:23:01,062 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+15:23:01,062 DEBUG DoubleConverter:353 - Setting default value: 0
+15:23:01,063 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+15:23:01,063 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+15:23:01,063 DEBUG FloatConverter:353 - Setting default value: 0
+15:23:01,063 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+15:23:01,063 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+15:23:01,064 DEBUG IntegerConverter:353 - Setting default value: 0
+15:23:01,065 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+15:23:01,065 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+15:23:01,066 DEBUG LongConverter:353 - Setting default value: 0
+15:23:01,066 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+15:23:01,066 DEBUG LongConverter:171 -     Converted to Long value '0'
+15:23:01,066 DEBUG ShortConverter:353 - Setting default value: 0
+15:23:01,067 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+15:23:01,067 DEBUG ShortConverter:171 -     Converted to Short value '0'
+15:23:01,070 DEBUG BigDecimalConverter:353 - Setting default value: 0.0
+15:23:01,070 DEBUG BigDecimalConverter:140 - Converting 'BigDecimal' value '0.0' to type 'BigDecimal'
+15:23:01,071 DEBUG BigDecimalConverter:162 -     No conversion required, value is already a BigDecimal
+15:23:01,072 DEBUG BigIntegerConverter:353 - Setting default value: 0
+15:23:01,072 DEBUG BigIntegerConverter:140 - Converting 'BigInteger' value '0' to type 'BigInteger'
+15:23:01,072 DEBUG BigIntegerConverter:162 -     No conversion required, value is already a BigInteger
+15:23:01,072 DEBUG BooleanConverter:353 - Setting default value: false
+15:23:01,072 DEBUG BooleanConverter:140 - Converting 'Boolean' value 'false' to type 'Boolean'
+15:23:01,072 DEBUG BooleanConverter:162 -     No conversion required, value is already a Boolean
+15:23:01,073 DEBUG ByteConverter:353 - Setting default value: 0
+15:23:01,075 DEBUG ByteConverter:140 - Converting 'Integer' value '0' to type 'Byte'
+15:23:01,075 DEBUG ByteConverter:171 -     Converted to Byte value '0'
+15:23:01,075 DEBUG CharacterConverter:353 - Setting default value:  
+15:23:01,076 DEBUG CharacterConverter:140 - Converting 'Character' value ' ' to type 'Character'
+15:23:01,076 DEBUG CharacterConverter:162 -     No conversion required, value is already a Character
+15:23:01,076 DEBUG DoubleConverter:353 - Setting default value: 0
+15:23:01,076 DEBUG DoubleConverter:140 - Converting 'Integer' value '0' to type 'Double'
+15:23:01,076 DEBUG DoubleConverter:171 -     Converted to Double value '0.0'
+15:23:01,076 DEBUG FloatConverter:353 - Setting default value: 0
+15:23:01,077 DEBUG FloatConverter:140 - Converting 'Integer' value '0' to type 'Float'
+15:23:01,077 DEBUG FloatConverter:171 -     Converted to Float value '0.0'
+15:23:01,077 DEBUG IntegerConverter:353 - Setting default value: 0
+15:23:01,077 DEBUG IntegerConverter:140 - Converting 'Integer' value '0' to type 'Integer'
+15:23:01,077 DEBUG IntegerConverter:162 -     No conversion required, value is already a Integer
+15:23:01,077 DEBUG LongConverter:353 - Setting default value: 0
+15:23:01,077 DEBUG LongConverter:140 - Converting 'Integer' value '0' to type 'Long'
+15:23:01,077 DEBUG LongConverter:171 -     Converted to Long value '0'
+15:23:01,078 DEBUG ShortConverter:353 - Setting default value: 0
+15:23:01,078 DEBUG ShortConverter:140 - Converting 'Integer' value '0' to type 'Short'
+15:23:01,078 DEBUG ShortConverter:171 -     Converted to Short value '0'
+15:23:01,079 DEBUG StringConverter:353 - Setting default value: 
+15:23:01,080 DEBUG StringConverter:140 - Converting 'String' value '' to type 'String'
+15:23:01,086 DEBUG ArrayConverter:353 - Setting default value: [Z@33782bdb
+15:23:01,086 DEBUG ArrayConverter:140 - Converting 'boolean[]' value '[Z@33782bdb' to type 'boolean[]'
+15:23:01,086 DEBUG ArrayConverter:162 -     No conversion required, value is already a boolean[]
+15:23:01,086 DEBUG ArrayConverter:353 - Setting default value: [B@5915a296
+15:23:01,086 DEBUG ArrayConverter:140 - Converting 'byte[]' value '[B@5915a296' to type 'byte[]'
+15:23:01,087 DEBUG ArrayConverter:162 -     No conversion required, value is already a byte[]
+15:23:01,087 DEBUG ArrayConverter:353 - Setting default value: [C@415f2aff
+15:23:01,087 DEBUG ArrayConverter:140 - Converting 'char[]' value '[C@415f2aff' to type 'char[]'
+15:23:01,087 DEBUG ArrayConverter:162 -     No conversion required, value is already a char[]
+15:23:01,087 DEBUG ArrayConverter:353 - Setting default value: [D@a3da360
+15:23:01,087 DEBUG ArrayConverter:140 - Converting 'double[]' value '[D@a3da360' to type 'double[]'
+15:23:01,087 DEBUG ArrayConverter:162 -     No conversion required, value is already a double[]
+15:23:01,088 DEBUG ArrayConverter:353 - Setting default value: [F@7869770f
+15:23:01,088 DEBUG ArrayConverter:140 - Converting 'float[]' value '[F@7869770f' to type 'float[]'
+15:23:01,088 DEBUG ArrayConverter:162 -     No conversion required, value is already a float[]
+15:23:01,088 DEBUG ArrayConverter:353 - Setting default value: [I@c1c6b86
+15:23:01,088 DEBUG ArrayConverter:140 - Converting 'int[]' value '[I@c1c6b86' to type 'int[]'
+15:23:01,088 DEBUG ArrayConverter:162 -     No conversion required, value is already a int[]
+15:23:01,088 DEBUG ArrayConverter:353 - Setting default value: [J@342cb028
+15:23:01,089 DEBUG ArrayConverter:140 - Converting 'long[]' value '[J@342cb028' to type 'long[]'
+15:23:01,089 DEBUG ArrayConverter:162 -     No conversion required, value is already a long[]
+15:23:01,089 DEBUG ArrayConverter:353 - Setting default value: [S@53ed336e
+15:23:01,089 DEBUG ArrayConverter:140 - Converting 'short[]' value '[S@53ed336e' to type 'short[]'
+15:23:01,089 DEBUG ArrayConverter:162 -     No conversion required, value is already a short[]
+15:23:01,089 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigDecimal;@600ff713
+15:23:01,089 DEBUG ArrayConverter:140 - Converting 'BigDecimal[]' value '[Ljava.math.BigDecimal;@600ff713' to type 'BigDecimal[]'
+15:23:01,090 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigDecimal[]
+15:23:01,090 DEBUG ArrayConverter:353 - Setting default value: [Ljava.math.BigInteger;@5e5cace3
+15:23:01,090 DEBUG ArrayConverter:140 - Converting 'BigInteger[]' value '[Ljava.math.BigInteger;@5e5cace3' to type 'BigInteger[]'
+15:23:01,090 DEBUG ArrayConverter:162 -     No conversion required, value is already a BigInteger[]
+15:23:01,090 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Boolean;@7bb856eb
+15:23:01,090 DEBUG ArrayConverter:140 - Converting 'Boolean[]' value '[Ljava.lang.Boolean;@7bb856eb' to type 'Boolean[]'
+15:23:01,091 DEBUG ArrayConverter:162 -     No conversion required, value is already a Boolean[]
+15:23:01,091 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Byte;@481676fe
+15:23:01,091 DEBUG ArrayConverter:140 - Converting 'Byte[]' value '[Ljava.lang.Byte;@481676fe' to type 'Byte[]'
+15:23:01,091 DEBUG ArrayConverter:162 -     No conversion required, value is already a Byte[]
+15:23:01,091 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Character;@11c0c1a8
+15:23:01,091 DEBUG ArrayConverter:140 - Converting 'Character[]' value '[Ljava.lang.Character;@11c0c1a8' to type 'Character[]'
+15:23:01,091 DEBUG ArrayConverter:162 -     No conversion required, value is already a Character[]
+15:23:01,092 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Double;@2ef6f9b9
+15:23:01,092 DEBUG ArrayConverter:140 - Converting 'Double[]' value '[Ljava.lang.Double;@2ef6f9b9' to type 'Double[]'
+15:23:01,092 DEBUG ArrayConverter:162 -     No conversion required, value is already a Double[]
+15:23:01,092 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Float;@27eea7c6
+15:23:01,092 DEBUG ArrayConverter:140 - Converting 'Float[]' value '[Ljava.lang.Float;@27eea7c6' to type 'Float[]'
+15:23:01,092 DEBUG ArrayConverter:162 -     No conversion required, value is already a Float[]
+15:23:01,093 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Integer;@d7050b9
+15:23:01,093 DEBUG ArrayConverter:140 - Converting 'Integer[]' value '[Ljava.lang.Integer;@d7050b9' to type 'Integer[]'
+15:23:01,093 DEBUG ArrayConverter:162 -     No conversion required, value is already a Integer[]
+15:23:01,093 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Long;@48be7b4d
+15:23:01,093 DEBUG ArrayConverter:140 - Converting 'Long[]' value '[Ljava.lang.Long;@48be7b4d' to type 'Long[]'
+15:23:01,093 DEBUG ArrayConverter:162 -     No conversion required, value is already a Long[]
+15:23:01,093 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Short;@41d51195
+15:23:01,094 DEBUG ArrayConverter:140 - Converting 'Short[]' value '[Ljava.lang.Short;@41d51195' to type 'Short[]'
+15:23:01,094 DEBUG ArrayConverter:162 -     No conversion required, value is already a Short[]
+15:23:01,094 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.String;@1375890
+15:23:01,094 DEBUG ArrayConverter:140 - Converting 'String[]' value '[Ljava.lang.String;@1375890' to type 'String[]'
+15:23:01,094 DEBUG ArrayConverter:162 -     No conversion required, value is already a String[]
+15:23:01,094 DEBUG ArrayConverter:353 - Setting default value: [Ljava.lang.Class;@340621aa
+15:23:01,095 DEBUG ArrayConverter:140 - Converting 'Class[]' value '[Ljava.lang.Class;@340621aa' to type 'Class[]'
+15:23:01,095 DEBUG ArrayConverter:162 -     No conversion required, value is already a Class[]
+15:23:01,095 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Date;@5d36c706
+15:23:01,095 DEBUG ArrayConverter:140 - Converting 'Date[]' value '[Ljava.util.Date;@5d36c706' to type 'Date[]'
+15:23:01,095 DEBUG ArrayConverter:162 -     No conversion required, value is already a Date[]
+15:23:01,095 DEBUG ArrayConverter:353 - Setting default value: [Ljava.util.Calendar;@1d29ff97
+15:23:01,096 DEBUG ArrayConverter:140 - Converting 'Calendar[]' value '[Ljava.util.Calendar;@1d29ff97' to type 'Calendar[]'
+15:23:01,096 DEBUG ArrayConverter:162 -     No conversion required, value is already a Calendar[]
+15:23:01,096 DEBUG ArrayConverter:353 - Setting default value: [Ljava.io.File;@73c27c1c
+15:23:01,096 DEBUG ArrayConverter:140 - Converting 'java.io.File[]' value '[Ljava.io.File;@73c27c1c' to type 'java.io.File[]'
+15:23:01,097 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.io.File[]
+15:23:01,097 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Date;@90c428e
+15:23:01,097 DEBUG ArrayConverter:140 - Converting 'java.sql.Date[]' value '[Ljava.sql.Date;@90c428e' to type 'java.sql.Date[]'
+15:23:01,097 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Date[]
+15:23:01,098 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Time;@4d7aa6bf
+15:23:01,098 DEBUG ArrayConverter:140 - Converting 'java.sql.Time[]' value '[Ljava.sql.Time;@4d7aa6bf' to type 'java.sql.Time[]'
+15:23:01,098 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Time[]
+15:23:01,098 DEBUG ArrayConverter:353 - Setting default value: [Ljava.sql.Timestamp;@235e7da5
+15:23:01,098 DEBUG ArrayConverter:140 - Converting 'java.sql.Timestamp[]' value '[Ljava.sql.Timestamp;@235e7da5' to type 'java.sql.Timestamp[]'
+15:23:01,098 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.sql.Timestamp[]
+15:23:01,099 DEBUG ArrayConverter:353 - Setting default value: [Ljava.net.URL;@56b078a6
+15:23:01,099 DEBUG ArrayConverter:140 - Converting 'java.net.URL[]' value '[Ljava.net.URL;@56b078a6' to type 'java.net.URL[]'
+15:23:01,099 DEBUG ArrayConverter:162 -     No conversion required, value is already a java.net.URL[]
+15:23:01,104 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@5c791d1c, password=[Ljava.lang.String;@41f30196, validateCode=[Ljava.lang.String;@28c128cb})
+15:23:01,106 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+15:23:01,107 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+15:23:01,108 DEBUG ConvertUtils:481 - Convert string '1234dsad' to class 'java.lang.String'
+15:23:01,108 DEBUG StringConverter:140 - Converting 'String' value '1234dsad' to type 'String'
+15:23:21,368 DEBUG BeanUtils:810 - BeanUtils.populate(User{id=null, username='null', password='null'}, {username=[Ljava.lang.String;@3237420, password=[Ljava.lang.String;@de49a34, validateCode=[Ljava.lang.String;@9db1f50})
+15:23:21,369 DEBUG ConvertUtils:481 - Convert string 'admin' to class 'java.lang.String'
+15:23:21,369 DEBUG StringConverter:140 - Converting 'String' value 'admin' to type 'String'
+15:23:21,370 DEBUG ConvertUtils:481 - Convert string '123456789' to class 'java.lang.String'
+15:23:21,370 DEBUG StringConverter:140 - Converting 'String' value '123456789' to type 'String'
+15:23:21,404 DEBUG LogFactory:135 - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+15:23:21,464 DEBUG VFS:111 - Class not found: org.jboss.vfs.VFS
+15:23:21,464 DEBUG JBoss6VFS:142 - JBoss 6 VFS API is not available in this environment.
+15:23:21,464 DEBUG VFS:111 - Class not found: org.jboss.vfs.VirtualFile
+15:23:21,465 DEBUG VFS:63 - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+15:23:21,465 DEBUG VFS:77 - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+15:23:21,466 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean
+15:23:21,466 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean
+15:23:21,495 DEBUG DefaultVFS:102 - Reader entry: User.class
+15:23:21,496 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean
+15:23:21,496 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean/User.class
+15:23:21,496 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/bean/User.class
+15:23:21,497 DEBUG DefaultVFS:102 - Reader entry: ����   4 =
+15:23:21,498 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.bean.User matches criteria [is assignable to Object]
+15:23:21,521 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:23:21,521 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:23:21,521 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:23:21,522 DEBUG PooledDataSource:335 - PooledDataSource forcefully closed/removed all connections.
+15:23:21,524 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao
+15:23:21,524 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao
+15:23:21,526 DEBUG DefaultVFS:102 - Reader entry: UserDao.class
+15:23:21,527 DEBUG DefaultVFS:102 - Reader entry: UserDao.xml
+15:23:21,527 DEBUG DefaultVFS:113 - Listing file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao
+15:23:21,527 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.class
+15:23:21,527 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.class
+15:23:21,528 DEBUG DefaultVFS:102 - Reader entry: ����   4 
+15:23:21,528 DEBUG DefaultVFS:222 - Find JAR URL: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.xml
+15:23:21,528 DEBUG DefaultVFS:248 - Not a JAR: file:/D:/workspace/java129/day25/day25_validatecode_case/target/classes/com/itheima/dao/UserDao.xml
+15:23:21,529 DEBUG DefaultVFS:102 - Reader entry: <?xml version="1.0" encoding="UTF-8" ?>
+15:23:21,529 DEBUG ResolverUtil:256 - Checking to see if class com.itheima.dao.UserDao matches criteria [is assignable to Object]
+15:23:21,602 DEBUG JdbcTransaction:137 - Opening JDBC Connection
+15:23:21,814 DEBUG PooledDataSource:406 - Created connection 2093869440.
+15:23:21,815 DEBUG JdbcTransaction:101 - Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7ccde980]
+15:23:21,818 DEBUG select:159 - ==>  Preparing: select * from tb_user where username=? and password=? 
+15:23:21,842 DEBUG select:159 - ==> Parameters: admin(String), 123456789(String)
+15:23:21,849 DEBUG select:159 - <==      Total: 0
+15:23:21,850 DEBUG JdbcTransaction:123 - Resetting autocommit to true on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7ccde980]
+15:23:21,851 DEBUG JdbcTransaction:91 - Closing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7ccde980]
+15:23:21,851 DEBUG PooledDataSource:363 - Returned connection 2093869440 to pool.

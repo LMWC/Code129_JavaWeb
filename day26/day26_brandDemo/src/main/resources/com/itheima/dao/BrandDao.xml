@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.BrandDao">
+
+    <!--使用resultMap手动配置字段和属性映射-->
+    <resultMap id="brandMap" type="Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <!--查询所有品牌-->
+    <select id="selectAll" resultMap="brandMap">
+        select * from tb_brand
+    </select>
+
+    <!--添加品牌-->
+    <insert id="add" parameterType="Brand">
+        insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
+    <!--根据id查询品牌-->
+    <select id="selectById" resultMap="brandMap">
+        select * from tb_brand where id=#{id}
+    </select>
+
+    <!--修改品牌-->
+    <!--<update id="update" parameterType="Brand">
+        update tb_brand set brand_name=#{brandName},company_name=#{companyName},ordered=#{ordered},description=#{description},status=#{status} where id=#{id}
+    </update>-->
+    <update id="update" parameterType="Brand">
+        update tb_brand
+        <set>
+            <if test="brandName != null and brandName != ''">
+                brand_name = #{brandName},
+            </if>
+            <if test="companyName != null and companyName != ''">
+                company_name = #{companyName},
+            </if>
+            <if test="ordered != null">
+                ordered = #{ordered},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="status != null">
+                status = #{status}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <!--根据id删除品牌-->
+    <delete id="delete" parameterType="int">
+        delete from tb_brand where id=#{id}
+    </delete>
+</mapper>

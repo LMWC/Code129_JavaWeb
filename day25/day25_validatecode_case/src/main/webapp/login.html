@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>用户登录</h1>
+    <form action="login" method="post">
+        姓 &nbsp;&nbsp;名：<input type="text" name="username"/><br/>
+        密 &nbsp;&nbsp;码：<input type="password" name="password"/><br/>
+        验证码：<input type="text" name="validateCode" /><br/>
+        <!--使用网络路径 获取CheckCodeServlet生成的验证码显示在页面-->
+        <!-- http://localhost:8080/checkCodeServlet = checkCodeServlet -->
+        <img src="checkCodeServlet" onclick="changeImg(this)" /><br>
+        <input type="submit" value="登录"/>
+    </form>
+
+    <script>
+        function changeImg(obj) {
+            console.log("come in");
+            //点击验证码图片 重新发送一次请求 获取新的验证码图片显示 this表示的就是当前img标签对象
+            //注意：如果新的图片路径和之前一样 浏览器会认为是同一个图片 不会发起新的请求 就是由于浏览器的缓存导致的
+            //如何让浏览器发起新的请求？ 忽悠浏览器就行了 让新的请求地址和原来的请求地址不一样
+            //这个参数没有意义 只是用来忽悠浏览器  让浏览器觉得新的地址和原来的不一样 从而可以发起新的请求
+            obj.setAttribute("src","checkCodeServlet?a="+new Date().getTime());
+        }
+    </script>
+</center>
+</body>
+</html>

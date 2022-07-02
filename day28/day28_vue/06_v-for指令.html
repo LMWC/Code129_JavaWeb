@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        v-for：用于遍历集合或数组中的元素在标签体中展示
+            语法：<标签 v-for="(元素,索引) in 数组"></标签>
+            注意：
+                1.右小括号和in之间需要有一个空格
+
+
+    -->
+    <div id="app">
+        <!--需求1：将arr1数组中的元素遍历到li标签中显示-->
+        <ul>
+            <li v-for="(item,index) in arr1">{{item}}</li>
+        </ul>
+        <!--需求2：将后台响应的用户信息列表展示在页面表格中-->
+        <table border="1" cellpadding="0" cellspacing="0" width="600px" align="center">
+            <tr>
+                <th>序号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+            <!--每遍历一次 就会输出一行数据展示-->
+            <tr v-for="(user,index)in users">
+                <td>{{index+1}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.age}}</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+                arr1:["zs","ls","ww"],
+                //模拟后台响应的用户列表数据
+                users:[
+                    {"username":"zhangsan","age":18},
+                    {"username":"lisi","age":20},
+                    {"username":"wangwu","age":28}
+                ]
+            },
+            methods:{
+
+            }
+        });
+    </script>
+</body>
+</html>

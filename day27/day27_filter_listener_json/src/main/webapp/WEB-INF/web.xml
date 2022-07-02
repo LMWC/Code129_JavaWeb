@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+
+
+	<!--配置过滤器-->
+
+	<!--配置过滤器-->
+	<filter>
+		<!--给过滤器起名-->
+		<filter-name>filterDemo05</filter-name>
+		<!--过滤器全限定类名-->
+		<filter-class>com.itheima.web.filter.FilterDemo05</filter-class>
+	</filter>
+	<filter-mapping>
+		<!--过滤器名称-->
+		<filter-name>filterDemo05</filter-name>
+		<!--过滤器拦截路径  /demo02表示只拦截请求/demo02的资源-->
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<!--给过滤器起名-->
+		<filter-name>filterDemo02</filter-name>
+		<!--过滤器全限定类名-->
+		<filter-class>com.itheima.web.filter.FilterDemo02</filter-class>
+	</filter>
+	<filter-mapping>
+		<!--过滤器名称-->
+		<filter-name>filterDemo02</filter-name>
+		<!--过滤器拦截路径  /demo02表示只拦截请求/demo02的资源-->
+		<url-pattern>/demo02</url-pattern>
+	</filter-mapping>
+
+	<!--配置监听器-->
+	<listener>
+		<listener-class>com.itheima.web.listener.MyListener</listener-class>
+	</listener>
+</web-app>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <link href="css/register.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-div">
+    <div class="reg-content">
+        <h1>欢迎注册</h1>
+        <span>已有帐号？</span> <a href="login.html">登录</a>
+    </div>
+    <form id="reg-form" action="#" method="get">
+
+        <table>
+
+            <tr>
+                <td>用户名</td>
+                <td class="inputs">
+                    <input name="username" type="text" id="username" onblur="checkUsername(this)">
+                    <br>
+                    <span id="username_err" class="err_msg" style="display: block"></span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>密码</td>
+                <td class="inputs">
+                    <input name="password" type="password" id="password">
+                    <br>
+                    <span id="password_err" class="err_msg" style="display: none">密码格式有误</span>
+                </td>
+            </tr>
+            <tr>
+                <td>验证码</td>
+                <td class="inputs">
+                    <input name="checkCode" type="text" id="checkCode">
+                    <img src="imgs/a.jpg">
+                    <a href="#" id="changeImg">看不清？</a>
+                </td>
+            </tr>
+
+        </table>
+
+        <div class="buttons">
+            <input value="注 册" type="submit" id="reg_btn">
+        </div>
+        <br class="clear">
+    </form>
+</div>
+
+    <script>
+        /*
+            1.为用户名输入框绑定失去焦点事件函数
+            2.获取请求参数【注册用户名】
+            3.编写函数checkUsername(),发送ajax请求
+            4.接收响应数据处理
+         */
+        function checkUsername(obj) {
+            //1.获取请求参数【注册用户名】
+            var username = obj.value;
+            console.log(username);
+
+            //2.发送ajax请求 携带参数
+            //2.1.创建异步请求发送对象 XMLHttpRequest
+            var xhr = new XMLHttpRequest();
+            //2.2.打开连接【设置请求方式、请求地址】
+            xhr.open("get","userServlet?username="+username);
+            //2.3.发送请求
+            xhr.send();
+            //2.4.监听异步请求发送对象状态变化 处理响应数据
+            xhr.onreadystatechange = function () {
+
+                //3.接收响应数据处理
+                if(this.readyState==4 && this.status==200){
+                    //获取后台响应的文本数据
+                    var result = this.responseText;
+
+                    if(result == "true"){
+                        //用户名已存在 不可用
+                        document.getElementById("username_err").innerHTML = "<font color='red'>用户名太受欢迎，请换一个</font>";
+                    }else if(result=="false"){
+                        //用户名不存在 可用
+                        document.getElementById("username_err").innerHTML = "<font color='green'>用户名可以使用</font>";
+                    }
+                }
+
+            }
+
+
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        v-on指令：用于事件绑定 简写：@  【也就是将js中原来的on事件名换成@事件名    onclick==》@click】
+            语法：<标签 @事件名="函数()"></标签>
+            特点：
+                1.v-on作为html标签属性使用 写在开始标签中
+                2.v-on绑定的函数写在vue的methods属性中
+            注意：
+                1.Vue的methods属性s不能少
+                2.在vue中 绑定函数 如果函数没有参数传递，小括号可以省略  但是在js中事件绑定函数，函数小括号不能省略
+    -->
+    <div id="app">
+        <button v-on:click="fun01">按钮1</button><br>
+        <button @click="fun01">按钮2</button><br>
+        username：<input type="text" @focus="fun02()" @blur="fun03()" id="username"><br>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script>
+        new Vue({
+            el:"#app",
+            data:{
+
+            },
+            methods:{
+                fun01:function () {
+                    alert("我被点了");
+                },
+                fun02:function () {
+                    console.log("获得焦点了");
+                },
+                fun03:function (obj) {
+                    console.log("失去焦点："+document.getElementById("username").value);
+                }
+            }
+        });
+    </script>
+</body>
+</html>
