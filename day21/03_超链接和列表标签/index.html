@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        案例实现步骤：
+            1.创建一个标题标签
+            2.创建一个无序列表 设置项目符号为实心正方体square
+            3.有三个列表项  每个列表项目中都嵌套一个超链接标签
+
+            快捷键：li>a 按tab 会在li标签内部创建一个a的子标签
+                +：相邻的标签
+                >：父子标签
+                ()：一个整体
+                *3：出现3次
+    -->
+    <h1>友情链接</h1>
+    <ul type="square">
+        <li>
+            <a href="http://www.baidu.com">百度</a>
+        </li>
+        <li><a href="http://www.itcast.com">传智</a></li>
+        <li><a href="#">谷歌</a></li>
+    </ul>
+
+    
+    <hr>
+    <!--ul>(li>a)*3-->
+    <ul>
+        <li><a href="#">百度</a></li>
+        <li><a href="#">传智</a></li>
+        <li><a href="#">谷歌</a></li>
+    </ul>
+
+    <hr>
+    <!--h1+ul>(li>a)*3-->
+    <h1>友情链接</h1>
+    <ul>
+        <li><a href="#">百度</a></li>
+        <li><a href="#">传智</a></li>
+        <li><a href="#">谷歌</a></li>
+    </ul>
+
+</body>
+</html>

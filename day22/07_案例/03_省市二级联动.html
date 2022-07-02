@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    籍贯：
+        <select name="province" id="province" onchange="changeProvince(this)">
+            <option value="-1">-请选择-</option>
+            <option value="0">广东省</option>
+            <option value="1">湖北省</option>
+            <option value="2">广西省</option>
+        </select>
+        <select name="city" id="city">
+            <option value="-1">-请选择-</option>
+            <option value="">广州</option>
+            <option value="">深圳</option>
+            <option value="">东莞</option>
+        </select>
+
+    <script>
+        /*
+            思路分析：
+                1.准备一个二维数组，存储省份对应的城市数据
+                2.为省份下拉列表绑定内容改变事件函数  changeProvince()
+                3.编写内容改变事件函数代码
+                    function changeProvince(){
+                        //1.获取当前选中的省份的value值
+                        //2.根据省份的value获取对应的城市数据  arr[value]
+                        //3.遍历城市数据  创建option元素 存放对应的城市数据  插入到城市下拉列表中
+                    }
+         */
+
+        // 1.准备一个二维数组，存储省份对应的城市数据
+        var arr=[
+            ["广州","深圳","东莞","惠州"],
+            ["武汉","宜昌","襄阳","黄冈"],
+            ["南宁","桂林","北海","柳州"]
+        ];
+        // 2.为省份下拉列表绑定内容改变事件函数  changeProvince()
+        // 3.编写内容改变事件函数代码
+        function changeProvince(obj){
+
+            //0.当选择的省份发生改变之后  需要清除原来的城市数据
+            document.getElementById("city").innerHTML = "<option value='-1'>-请选择-</option>";
+
+            //1.获取当前选中的省份的value值
+            var value = obj.value;
+            console.log(value);
+
+            //2.根据省份的value获取对应的城市数据  arr[value]
+            var citys = arr[value];
+
+            //3.遍历城市数据  创建option元素 存放对应的城市数据  插入到城市下拉列表中
+            for (const city of citys) {
+                //3.1：创建option元素
+                var optionEle = document.createElement("option");
+
+                //3.2:将城市名称放入到option标签体中
+                optionEle.innerText = city;
+
+                //3.3:将option元素插入到城市下拉列表中
+                document.getElementById("city").appendChild(optionEle);
+            }
+        }
+    </script>
+</body>
+</html>

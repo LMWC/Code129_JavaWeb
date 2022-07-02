@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+     boolean转数字：
+        boolean:true 转为1，false 转为0
+    其他类型转为 boolean
+        1. number：0和NaN转为false，其他的数字转为true
+        2. string：空字符串转为false，其他字符串转为true
+        3. null:转为false
+        4. undefined：转为false
+     */
+
+    //boolean:true 转为1，false 转为0
+    var flag = false;
+    console.log(flag + 100);
+
+    //1. number：0和NaN转为false，其他的数字转为true
+    var a = parseInt("a5");
+    if(a){
+        console.log("true");
+    }else{
+        console.log("false");
+    }
+
+    //2. string：空字符串转为false，其他字符串转为true
+    var b = "bb";
+    if(b){
+        console.log("true");
+    }else{
+        console.log("false");
+    }
+
+    //3.null:转为false
+    var c = null;
+    if(c){
+        console.log("true");
+    }else{
+        console.log("false");
+    }
+
+    //4.undefined：转为false
+    var d;
+    if(d){
+        console.log("true");
+    }else{
+        console.log("false");
+    }
+
+</script>
+</body>
+</html>

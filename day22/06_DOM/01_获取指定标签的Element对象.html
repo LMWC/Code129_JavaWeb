@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="inputId1" type="text" value="admin"><br/>
+    <input id="inputId2" type="password" value="123456"><br/>
+    <input type="text" class="c1"><br/>
+    <input type="text" class="c1"><br/>
+    <input type="text" class="c1"><br/>
+    <input type="text" class="c1"><br/>
+    <input type="checkbox" name="hobby"> 篮球<br/>
+    <input type="checkbox" name="hobby"> 足球<br/>
+    <input type="checkbox" name="hobby"> 敲代码<br/>
+
+    <script>
+        //1.获取HTML文档中指定标签的元素对象
+
+        //方式一：根据id获取 返回一个Element对象                      【推荐使用】
+        var input01 = document.getElementById("inputId1"); //用户名标签所对应的元素对象
+        console.log(input01.value);
+
+        //方式二：根据标签名称获取  返回一批标签的Element对象数组          【常用】
+        var inputs = document.getElementsByTagName("input");
+        console.log(inputs.length);
+        console.log(inputs[1].value);
+
+        //方式三：根据class属性值获取  返回一批标签的Element对象数组       【常用】
+        var c1s = document.getElementsByClassName("c1");
+        console.log(c1s.length);
+
+        //方式四：根据name属性值获取  返回一批标签的Element对象数组
+        var hobbys = document.getElementsByName("hobby");
+        console.log(hobbys.length);
+    </script>
+</body>
+</html>

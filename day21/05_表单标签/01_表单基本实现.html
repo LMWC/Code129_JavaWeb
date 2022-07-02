@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        form：表单标签 用于收集用户在表单项中输入的数据提交给服务器
+            input：输入框
+                type：text 默认值 普通文本框
+                      password：密码框
+                      radio：单选按钮
+                      checkbox：复选框
+                      file：文件上传框
+                      submit：提交按钮
+                      reset：重置按钮
+                      button：普通按钮
+                      hidden：隐藏域
+            select：下拉列表
+            textarea：文本域
+    -->
+    <!--
+        form：定义表单
+            action：设置表单数据提交地址
+            method ：规定用于发送表单数据的方式
+                get：默认 浏览器会将数据直接附在表单的 action URL 之后。大小有限制
+                post：浏览器会将数据放到http请求消息体中。大小无限制
+        get和post区别
+            1. get方式提交的数据(请求参数)在地址栏可见(拼接在请求的路径后面), post方式不可见,提交的数据在请求体中
+            2. get方式相对不安全, post方式相当安全一些
+            3. get方式对提交的数据(请求参数)的大小有限制的, post方式没有限制的
+
+        表单元素标签的name属性:
+             1.为单选框和复选框分组
+             2.作为key提交数据到后台(服务器),后台(服务器)会以name属性的值作为键去获取对应的值,如果表单元素标签没有设置name属性,后台是无法获取表单标签中输入的值
+             3.如果表单项元素标签没有设置name属性 则无法将用户输入的数据提交到后台
+        表单元素标签的value属性:
+             1. 给按钮起名字
+             2. 设置提交到服务器的值  name=value  主要用于单选框、复选框和下拉列表
+
+        设置表单元素的默认值
+             text,password: 通过value属性来设置默认值
+             单选框\复选框: 通过checked设置默认值
+             下拉框: 通过selected设置默认值
+             textarea: 直接写文本
+
+    -->
+
+    <form action="../00_Html快速入门.html" method="get">
+
+        <!--隐藏域：不会在页面展示 但是依然可以提交数据到后台-->
+        <input type="hidden" name="id" value="1">
+
+        用户名：<input type="text" name="username" value="admin"><br>
+        密码：<input type="password" name="password"><br>
+        性别：<input type="radio" name="sex" value="boy" checked>男
+             <input type="radio" name="sex" value="girl">女 <br>
+        爱好：<input type="checkbox" name="hobby" value="smoking"> 抽烟
+             <input type="checkbox" name="hobby" value="drink"> 喝酒
+             <input type="checkbox" name="hobby" value="fireHead" checked> 烫头 <br>
+        图像：<input type="file" name="photo"><br>
+        籍贯：
+            <select name="address">
+                <option value="gz">广州</option>
+                <option value="sz" selected>深圳</option>
+                <option value="dg">东莞</option>
+            </select><br>
+        自我介绍：<br>
+            <textarea name="introduce" cols="30" rows="10">帅哥真帅</textarea><br>
+
+        <input type="submit" value="修改">
+        <input type="reset" value="取消">
+        <input type="button" value="空白按钮"></form>
+</body>
+</html>

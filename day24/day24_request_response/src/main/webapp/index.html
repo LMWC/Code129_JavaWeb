@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <!--
+        index.html:     http://localhost:8080/day24/index.html
+        requestDemo06:  http://localhost:8080/day24/requestDemo06
+        所以：现在我想从index.html页面跳转到requestDemo06  使用相对路径 直接写requestDemo06就可以了
+
+        注意：tomcat7插件支持热部署  如果修改的是页面 不需要重新启动服务器  但是如果你修改的是java代码就需要重新启动服务器了
+    -->
+	<h3>使用GET方式提交数据：</h3>
+    <form action="requestDemo06" method="get">
+        用户名:<input type="text" name="username"/><br/>
+        密码:<input type="text" name="password"/><br/>
+        爱好:
+            <input type="checkbox" name="hobby" value="basketball">篮球
+            <input type="checkbox" name="hobby" value="football">足球
+            <input type="checkbox" name="hobby" value="code">敲代码<br/>
+            <input type="submit">
+        <input type="submit"/>
+    </form>
+	
+	<br/><br/><br/>
+	
+	
+	<h3>使用POST方式提交数据：</h3>
+    <form action="requestDemo06" method="post">
+        用户名:<input type="text" name="username"/><br/>
+        密码:<input type="text" name="password"/><br/>
+        爱好:
+            <input type="checkbox" name="hobby" value="basketball">篮球
+            <input type="checkbox" name="hobby" value="football">足球
+            <input type="checkbox" name="hobby" value="code">敲代码<br/>
+            <input type="submit">
+        <input type="submit"/>
+    </form>
+	
+	
+</body>
+</html>

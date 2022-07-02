@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="fun05()">
+
+    <!--事件绑定方式一：通过标签事件属性绑定普通函数-->
+    <button onclick="fun01()">click me</button>
+    <!--事件绑定方式二：通过标签的dom对象绑定匿名函数-->
+    <button id="btn">click me</button>
+    <br>
+
+    <!--用户名输入框  this表示的就是当前这个输入框对象-->
+    用户名：<input type="text" onfocus="fun02()" onblur="fun03(this)" /><br>
+    密码：<input type="password" onkeydown="fun06(event)" onkeyup="fun07()"><br>
+
+    <!--地址下拉框-->
+    地址：<select name="address" id="address" onchange="fun04(this)">
+        <option value="gz">广州</option>
+        <option value="sz">深圳</option>
+        <option value="dg">东莞</option>
+    </select>
+
+    <!--div-->
+    <div id="divId" style="width: 200px;height: 200px;border: 1px solid red" onmouseover="fun08()" onmouseout="fun09()">div</div>
+
+    <script>
+        /*
+            事件概念：指的是浏览器或用户做的某件事情
+            事件一般配合函数一起使用，当触发了某个事件，就调用某个函数执行
+            常用事件：
+                表单事件：
+                    onfocus：获得焦点
+                    onblur：失去焦点
+                    onchange：内容发生改变
+                    onsubmit：表单提交事件
+                鼠标相关：
+                    onclick：鼠标单击
+                    onmouseouver：鼠标移入
+                    onmouseout：鼠标移出
+                键盘相关：
+                    onkeydown：键盘上的键按下
+                    onkeyup：键盘上的键按下之后松开
+               其他：
+                    onload：加载事件 一般指的是html文档加载
+            事件使用：需要绑定函数
+                方式一：通过html标签 事件属性名绑定普通函数
+                    语法：<标签 事件属性="函数名(实参列表)"></标签>
+                        eg：<button onclick="show()"></button>
+
+                方式二：通过html标签元素对象的事件属性绑定匿名函数
+                    语法：标签对象.事件属性=匿名函数;
+                        eg：<button id="btn"></button>
+                        document.getElementById("btn").onclick = function(){};
+
+        */
+
+        //需求1：每点击一次按钮 弹出hello...警告框
+        /*方式一：通过标签事件属性绑定普通函数*/
+        function fun01() {
+            alert("hello...");
+        }
+
+        /*方式二：通过标签的dom对象绑定匿名函数*/
+        document.getElementById("btn").onclick=function () {
+            alert("hello...");
+        }
+
+        //需求2：给用户名输入框设置获得和失去焦点事件
+        function fun02() {
+            console.log("获得焦点...");
+        }
+
+        function fun03(obj) {
+            //obj.value：通过输入框对象 获取输入框的值
+            console.log("失去焦点..."+obj.value);
+        }
+
+        //需求3：为下拉列表绑定内容改变事件
+        function fun04(obj) {
+            console.log("内容改变了 " + obj.value);
+        }
+
+        //需求4：为当前网页设置加载事件  onload事件一般绑定在body标签上
+        function fun05() {
+            alert("网页加载完成！");
+        }
+
+        //需求5：为输入框设置键盘键按下和松开事件
+        function fun06(e) {
+            console.log("键盘键按下..."+e.keyCode);
+        }
+
+        function fun07() {
+            console.log("键盘键松开...");
+        }
+
+        //需求6：为div设置输入移入和移出事件
+        function fun08() {
+            console.log("鼠标移入");
+            document.getElementById("divId").style.backgroundColor="red";
+        }
+        function fun09() {
+            console.log("鼠标移出");
+            document.getElementById("divId").style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>

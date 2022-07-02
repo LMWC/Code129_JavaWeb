@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //parseInt称为全局函数 在js代码中任何位置都可以直接使用
+    /*
+        parseInt():将字符串转为一个整数
+        parseFloat():将字符串转为一个小数
+        isNaN()：判断一个字符串是非数字吗？  是返回true 不是返回false
+     */
+
+    //1.字符串转整数|小数
+    var str1 = "99";
+    console.log(parseInt(str1));    //99
+    console.log(parseFloat(str1));    //99
+    console.log(isNaN(str1));         //false
+    var str11 = "99.6";
+    console.log(parseInt(str11));   //99
+    console.log(parseFloat(str11));   //99.6
+
+    var str12 = "99aa";
+    console.log(parseInt(str12));   //99
+    console.log(parseFloat(str12));   //99
+    console.log(isNaN(str12));      //true
+    var str13 = "a99";
+    console.log(parseInt(str13));   //NaN
+    console.log(parseFloat(str13));   //NaN
+    console.log(isNaN(str13));      //true
+
+
+</script>
+</body>
+</html>

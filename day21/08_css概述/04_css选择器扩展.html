@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*层级选择器*/
+        div font{
+            color: red;
+        }
+        p font{
+            color: green;
+        }
+
+        /*属性选择器*/
+        input[type='text']{
+            background-color: red;
+        }
+
+        /*并集选择器*/
+        #divId,span{
+            font-size: 30px;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <font>字体标签1---红色</font>
+        <p>
+            <font>字体标签2----绿色</font>
+        </p>
+    </div>
+    <hr/>
+
+    <form>
+        用户名:<input type="text"><br/>
+        密码:<input type="password">
+    </form>
+    <hr/>
+
+    <div id="divId">div</div>
+    <span>span</span>
+</body>
+</html>

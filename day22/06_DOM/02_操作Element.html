@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <p id="pId">段落标签</p>
+    <input type="button" value="添加font标签到p标签中" onclick="addElement()">
+    <input type="button" value="删除p标签" onclick="removeElement()">
+
+    <!--
+         document.createElement(tagName) 创建标签 Element对象
+         parentElement.appendChild(sonElement) 插入标签
+         document.createTextNode()创建文本
+         element.remove() 删除标签
+    -->
+    <script>
+        //添加元素
+        function addElement() {
+            //1.创建一个font标签的元素对象
+            var fontEle = document.createElement("font");
+            //2.创建一个文本对象
+            var textNode = document.createTextNode("hello js");
+            //3.将文本对象插入到font标签中
+            fontEle.appendChild(textNode);
+            //4.将font标签插入到p标签中
+            document.getElementById("pId").appendChild(fontEle);
+        }
+
+        //删除元素
+        function removeElement() {
+            document.getElementById("pId").remove();
+        }
+    </script>
+</body>
+</html>

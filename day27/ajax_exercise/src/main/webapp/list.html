@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>品牌页面</title>
+
+</head>
+<body>
+    <div id="app">
+        <table border="1" cellspacing="0" cellpadding="0" width="600px" align="center">
+            <tr>
+                <th>序号</th>
+                <th>品牌</th>
+                <th>公司</th>
+                <th>订单</th>
+                <th>描述</th>
+                <th>可用</th>
+            </tr>
+            <tr v-for="(brand,index) in brands">
+                <td>{{index+1}}</td>
+                <td>{{brand.brandName}}</td>
+                <td>{{brand.companyName}}</td>
+                <td>{{brand.ordered}}</td>
+                <td>{{brand.description}}</td>
+                <td>{{brand.status}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="js/vue.js"></script>
+    <script src="js/axios-0.18.0.js"></script>
+    <script>
+        var vm = new Vue({
+            el:"#app",
+            data:{
+                brands:[]
+            },
+            methods:{
+
+            },
+            created:function () {
+                //方式一：
+                /*axios.get("selectAll").then(function (response) {
+                    //获取后台响应数据 绑定到vue模型数据上  再通过v-for指令遍历模型中的数据在页面上显示
+                    //后台数据响应没有问题 是前端接收数据绑定出现了问题  原因是在axios中使用普通匿名函数 this表示的不是vue对象
+                     vm.users = response.data;
+                });*/
+
+                //方式二：推荐使用  在axios中使用新版本的箭头函数 此时，this就表示vue对象
+                axios.get("selectAll").then(response=>{
+                    this.brands = response.data;
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*1.需求：备注字体大小为12px颜色为灰色 */
+        /*标签选择器*/
+        span{
+            font-size: 12px;
+            color: gray;
+        }
+        /*2.需求：设置诗的标题字体大小为50px */
+        /*id选择器 id属性值一般是唯一的  通过该id属性值可以找到唯一的元素标签*/
+        #title{
+            font-size: 50px;
+        }
+
+        /*3.需求：要求设置诗词内容字体大小为30px*/
+        /*类选择器：选择一类标签 */
+        .content{
+            font-size: 30px;
+        }
+
+        /*4.需求：设置网页中的所有字体加粗 且使用隶书*/
+        /*全局选择器*/
+        *{
+            font-weight: bolder;
+            font-family: 隶书;
+        }
+
+        /* 基本选择器优先级：id选择器>类选择器>标签选择器>全局选择器 */
+    </style>
+</head>
+<body>
+    <p id="title">静夜思</p>
+    <p class="content">床前明月光</p>
+    <p class="content">疑是地上霜</p>
+    <p class="content">举头望明月</p>
+    <p class="content">低头思故乡</p>
+    <span>备注：作者李白</span>
+</body>
+</html>

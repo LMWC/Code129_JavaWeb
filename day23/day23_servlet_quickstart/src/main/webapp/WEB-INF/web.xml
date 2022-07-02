@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
+	<!--配置ServletDemo02-->
+	<servlet>
+		<!--Servlet名称：可以随便起-->
+		<servlet-name>ServletDemo02</servlet-name>
+		<servlet-class>com.itheima.web.ServletDemo02</servlet-class>
+	</servlet>
+	<!--Servlet映射配置-->
+	<servlet-mapping>
+		<!-- Servlet名称：和servlet标签下的servlet-name一致 -->
+		<servlet-name>ServletDemo02</servlet-name>
+		<!--Servlet请求访问地址   ：http://localhost:8080/day23/demo02-->
+		<url-pattern>/demo02</url-pattern>
+	</servlet-mapping>
+</web-app>

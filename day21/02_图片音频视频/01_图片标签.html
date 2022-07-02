@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        img标签：用于在页面展示图片
+            重点属性：
+                src：图片的路径
+                    相对路径：相对当前html文件的图片路径 ../：上一级目录 ./：当前目录
+                    绝对路径：以盘符或http开头的完整路径
+                        绝对路径注意点：
+                            1.路径中不要出现中文, 否则可能出现未知问题
+                            2.IDEA不能直接访问, 进入磁盘之后再访问是可以的
+                width：图片的宽  一般设置了宽之后 就会自适应调整图片的高度
+                    像素点：px
+                    百分比：% 相对 相对当前标签的父级标签尺寸来的
+                height：图片的高
+            了解属性：
+                alt：图片不显示 替代文字
+                title：图片标题  鼠标悬浮在图片上显示的文字
+    -->
+    <!--相对路径-->
+    <img src="../img/a.gif" alt="who" title="镁铝" />
+    <!--绝对路径 idea直接打开不显示 是idea的问题  进入磁盘打开html是可以看见图片的-->
+    <img src="D:\workspace\java129\day21_code\img\a.gif" alt="who2">
+
+    <img src="../img/b.jpg" alt="" title="刘亦菲">
+    <img src="../img/b.jpg" width="155px" height="100" alt="">
+    <img src="../img/b.jpg" width="50%" alt="">
+
+    <img src="../img/mm.jpg" height="853" width="640"/></body>
+</html>

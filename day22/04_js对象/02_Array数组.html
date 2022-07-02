@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        /*
+            注意：
+                1.js中的数组相当于java中的arrayList集合 长度和类型都没有限制
+                2.在js中使用forin遍历数组集合 得到的是数组或集合中元素的索引
+         */
+        //1.定义数组
+        //方式一：
+        var arr1 = new Array(3);
+
+        //方式二：
+        var arr2 = new Array("张三","李四","王五");
+
+        //方式三：
+        var arr3 = ["zs","ls","ww"];
+
+        //2.访问数组
+        arr1[0] = "zhangsan";
+        arr1[1] = "lisi";
+        arr1[2] = "wangwu";
+        arr1[3] = "zhaoliu";
+        arr1[4] = true;
+        arr1[9] = "hahaha";
+
+        //3.遍历数组
+        console.log("============遍历arr1-fori============");
+        for (let i = 0; i < arr1.length; i++) {
+            console.log(arr1[i]);
+        }
+
+        console.log("============遍历arr2-forin============");
+        for (var item in arr2){
+            console.log(arr2[item]);
+        }
+
+        console.log("============遍历arr3-forof============");
+        for (const item of arr3) {
+            console.log(item);
+        }
+
+        //4.数组常见方法
+        //concat
+        console.log(arr1.concat(arr2));
+
+        //join
+        console.log(arr2.join("-"));
+
+        //reverse
+        console.log("============遍历arr3-reverse============");
+        for (const str of arr3.reverse()) {
+            console.log(str);
+        }
+
+
+    </script>
+</body>
+</html>

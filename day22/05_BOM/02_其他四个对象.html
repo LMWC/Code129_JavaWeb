@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //2.navigator:浏览器导航对象
+        //获取浏览器的名称和版本信息
+        console.log(navigator.appName);
+        console.log(navigator.appVersion);
+
+        //3.screen:屏幕对象
+        //获取当前设备的浏览器屏幕分辨率的宽度和高度
+        console.log(screen.width + "*" + screen.height);
+
+        //5.location：地址栏对象
+        //5.1：获取当前页面地址
+        console.log(location.href);
+        //获取当前页面所在地址ip+端口号
+        console.log(location.host);
+
+        //5.2：使用href属性设置当前窗口地址 【资源的跳转】
+        location.href="http://www.baidu.com";
+
+        /*
+            前端页面实现资源跳转：
+                html：
+                    1.超链接a标签
+                    2.表单form标签action属性
+                js：
+                    1.window.open();
+                    2.location.href = "新地址";
+         */
+
+
+    </script>
+</body>
+</html>

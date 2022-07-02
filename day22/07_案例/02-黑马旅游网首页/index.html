@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+    实现思路：
+        1.创建一个8行1列的表格 完成黑马旅游网首页布局
+        2.第一行：存放一张顶部图片
+        3.第二行：嵌套一个一行三列的表格 分别存放三张图片
+        4.第三行：嵌套一个一行九列的表格 分别存在超链接
+        5.第四行：存放一张轮播图
+        6.第五行：嵌套一个三行四列的表格【合并第一行的所有列colspan  合并第一列的2,3行 rowspan】
+        7.第六行：复制第五行
+        8.第七行：存放一张底部图片
+        9.第八行：设置底部版权信息文字居中显示
+    -->
+    <!--1.创建一个8行1列的表格 完成黑马旅游网首页布局-->
+    <table width="100%"  cellspacing="0" cellpadding="0">
+        <!--2.第一行：存放一张顶部图片-->
+        <tr>
+            <td><img src="img/top_banner.jpg" alt="" width="100%"></td>
+        </tr>
+        <!--3.第二行：嵌套一个一行三列的表格 分别存放三张图片-->
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td><img src="img/logo.jpg" alt="" width="70%"></td>
+                        <td><img src="img/search.png" alt="" width="70%"></td>
+                        <td><img src="img/hotel_tel.png" alt="" width="70%"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--4.第三行：嵌套一个一行九列的表格 分别存在超链接-->
+        <tr>
+            <td>
+                <table width="100%" >
+                    <tr align="center" bgcolor="#FFC900">
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                        <td><a href="#">首页</a></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--5.第四行：存放一张轮播图-->
+        <tr>
+            <td>
+                <img id="imgId" src="img/banner_1.jpg" alt="" width="100%">
+            </td>
+        </tr>
+        <!--6.第五行：嵌套一个三行四列的表格【合并第一行的所有列colspan  合并第一列的2,3行 rowspan】-->
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td colspan="4"><img src="img/icon_6.jpg" alt="">国内游</td>
+                    </tr>
+                    <tr align="center">
+                        <td rowspan="2" align="left"><img src="img/guonei_1.jpg" alt=""></td>
+                        <td>
+                            <img src="img/jingxuan_1.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_2.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_3.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <img src="img/jingxuan_4.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_5.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_6.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--7.第六行：复制第五行-->
+        <tr>
+            <td>
+                <table width="100%">
+                    <tr>
+                        <td colspan="4"><img src="img/icon_6.jpg" alt="">国内游</td>
+                    </tr>
+                    <tr align="center">
+                        <td rowspan="2" align="left"><img src="img/guonei_1.jpg" alt=""></td>
+                        <td>
+                            <img src="img/jingxuan_1.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_2.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_3.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <img src="img/jingxuan_4.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_5.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                        <td>
+                            <img src="img/jingxuan_6.jpg" alt=""><br>
+                            上海直飞三亚5天4晚自由行 <br>
+                            <font color="red">¥899</font>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <!--8.第七行：存放一张底部图片-->
+        <tr>
+            <td>
+                <img src="img/footer_service.png" alt="" width="100%">
+            </td>
+        </tr>
+        <!--9.第八行：设置底部版权信息文字居中显示-->
+        <tr>
+            <td>
+                <center><font size="1" color="silver">江苏传智播客教育科技股份有限公司 版权所有Copyright 2006-2018, All Rights Reserved 苏ICP备16007882</font></center>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        /*
+            轮播思路分析：
+                1.创建一个定时器Interval 绑定函数 设置切换时间为3000ms
+                2.编写轮播图切换函数
+
+        */
+        setInterval("changeImg()",3000);
+
+        //获取img标签的元素对象
+        var imgEle = document.getElementById("imgId");
+        var i = 1;
+
+        function changeImg() {
+            if(i>3){
+                i=1;
+            }
+            imgEle.setAttribute("src","img/banner_"+i+".jpg");
+            i++;
+        }
+    </script>
+</body>
+</html>

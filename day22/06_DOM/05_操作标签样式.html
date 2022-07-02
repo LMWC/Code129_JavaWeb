@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--div-->
+    <div id="divId" style="width: 200px;height: 200px;border: 1px solid red" onmouseover="f1()" onmouseout="f2()">div</div>
+
+    <script>
+        //需求：为div设置输入移入和移出事件
+        function f1() {
+            console.log("鼠标移入");
+            document.getElementById("divId").style.backgroundColor="red";
+        }
+        function f2() {
+            console.log("鼠标移出");
+            document.getElementById("divId").style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>

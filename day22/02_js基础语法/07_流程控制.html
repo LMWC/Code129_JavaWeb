@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var flag = true;
+    if(flag){
+        console.log("成功");
+    }else{
+        console.log("失败");
+    }
+
+    var season=2;
+    switch (season) {
+        case 1:
+            console.log("春天");
+            break;
+        case 2:
+            console.log("夏天");
+            break;
+        case 3:
+            console.log("秋天");
+            break;
+        case 4:
+            console.log("冬天");
+            break;
+        default:
+            console.log("你的输入有误！");
+            break;
+    }
+
+    for (let i = 0; i < 10; i++) {
+        if(i==3){
+            //break;//结束循环
+            continue;//跳过当前这一次循环 进行下一次循环
+        }
+        console.log(i);
+    }
+
+
+</script>
+</body>
+</html>

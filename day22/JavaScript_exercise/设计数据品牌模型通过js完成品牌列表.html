@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设计数据品牌模型通过js完成品牌列表</title>
+</head>
+<body>
+<input type="button" value="新增"><br>
+<hr>
+<table border="1" cellspacing="0" width="800" id="table">
+    <!--<tr>
+        <th>序号</th>
+        <th>品牌名称</th>
+        <th>企业名称</th>
+        <th>排序</th>
+        <th>品牌介绍</th>
+        <th>状态</th>
+        <th>操作</th>
+
+    </tr>
+    <tr align="center">
+        <td>1</td>
+        <td>三只松鼠</td>
+        <td>三只松鼠</td>
+        <td>100</td>
+        <td>三只松鼠，好吃不上火</td>
+        <td>启用</td>
+        <td><a href="#">修改</a> <a href="#">删除</a></td>
+    </tr>
+
+    <tr align="center">
+        <td>2</td>
+        <td>优衣库</td>
+        <td>优衣库</td>
+        <td>10</td>
+        <td>优衣库，服适人生</td>
+        <td>禁用</td>
+
+        <td><a href="#">修改</a> <a href="#">删除</a></td>
+    </tr>
+
+    <tr align="center">
+        <td>3</td>
+        <td>小米</td>
+        <td>小米科技有限公司</td>
+        <td>1000</td>
+        <td>为发烧而生</td>
+        <td>启用</td>
+
+        <td><a href="#">修改</a> <a href="#">删除</a></td>
+    </tr>-->
+
+
+</table>
+
+</body>
+<script>
+    //处理页面加载事件
+    window.onload = function (){
+        let table = document.getElementById("table");
+        //准备数据
+        let data =[
+            {
+                id:1,
+                brandName:"三只松鼠",
+                companyName:"三只松鼠",
+                ordered:100,
+                description:"三只松鼠，好吃不上火",
+                status:1
+            },
+            {
+                id:2,
+                brandName:"优衣库",
+                companyName:"优衣库",
+                ordered:10,
+                description:"优衣库，服适人生",
+                status:0
+            },
+            {
+                id:1,
+                brandName:"小米",
+                companyName:"小米科技有限公司",
+                ordered:1000,
+                description:"为发烧而生",
+                status:1
+            }
+        ];
+        //准备显示的内容
+        let content = "<tr>\n" +
+            "        <th>序号</th>\n" +
+            "        <th>品牌名称</th>\n" +
+            "        <th>企业名称</th>\n" +
+            "        <th>排序</th>\n" +
+            "        <th>品牌介绍</th>\n" +
+            "        <th>状态</th>\n" +
+            "        <th>操作</th>\n" +
+            "\n" +
+            "    </tr>";
+        //循环数组
+        for (let i = 0; i < data.length; i++) {
+            content += "<tr align=\"center\">\n" +
+                "        <td>"+data[i].id+"</td>\n" +
+                "        <td>"+data[i].brandName+"</td>\n" +
+                "        <td>"+data[i].companyName+"</td>\n" +
+                "        <td>"+data[i].ordered+"</td>\n" +
+                "        <td>"+data[i].description+"</td>\n" +
+                "        <td>"+(data[i].status==1?"启用":"禁用")+"</td>\n" +
+                "\n" +
+                "        <td><a href=\"#\">修改</a> <a href=\"#\">删除</a></td>\n" +
+                "    </tr>";
+        }
+        table.innerHTML = content;
+    }
+</script>
+</html>

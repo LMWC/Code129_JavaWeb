@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //二维数组：数组中的每一个元素都是一个数组
+        //1.定义
+        var arr=[
+           ["广州","深圳","东莞","惠州"],
+           ["武汉","宜昌","襄阳","黄冈"],
+           ["南宁","桂林","北海","柳州"]
+        ];
+
+        //2.访问
+        console.log(arr[1][1]);
+
+        //3.遍历
+        for (const childrenArray of arr) {
+            for (const item of childrenArray) {
+                console.log(item);
+            }
+            console.log("==================================");
+        }
+
+
+    </script>
+</body>
+</html>

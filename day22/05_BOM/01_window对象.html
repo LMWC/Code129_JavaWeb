@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <button onclick="fun03()">关闭Interval定时器</button>
+    <button onclick="fun04()">关闭timeout定时器</button>
+
+    <script>
+        /*
+            window对象：浏览器窗口对象  对于window对象下的方法调用可以省略window.，直接使用window对象下的方法
+         */
+        //js 键盘输入
+        var name = prompt("请输入你的名字");
+        document.write(name);
+
+
+        //alert() 显示带有一段消息和一个确认按钮的警告框
+        //alert("Hello JS");
+
+        //confirm() 显示带有一段消息以及确认按钮和取消按钮的对话框,返回选择的结果,确定(true),取消(false)
+        /*var flag = confirm("确定打开百度页面吗？");
+        //document.write(flag);
+        if(flag){
+            //window下open方法
+            //打开新窗口
+            window.open("https://www.baidu.com");
+        }else{
+            //取消 关闭当前窗口
+            window.close();
+        }*/
+
+        //setInterval('函数名()',time) 按照指定的周期（以毫秒计）来调用函数或计算表达式  循环定时器
+        var timer01 = setInterval("fun01()",1000);
+
+        //setTimeout('函数名()',time) 在指定的毫秒数后调用函数或计算表达式  一次性定时器
+        var timer02 = setTimeout("fun02()",2000);
+
+        function fun01() {
+            console.log("Hello js");
+        }
+
+        function fun02() {
+            console.log("Hello World");
+        }
+
+        //clearInterval(定时器) 取消由 setInterval() 设置的 Interval()。
+        //clearTimeout(定时器) 取消由 setTimeout() 方法设置的 timeout。
+        function fun03(){
+            clearInterval(timer01);
+        }
+
+        function fun04() {
+            clearTimeout(timer02);
+        }
+    </script>
+</body>
+</html>

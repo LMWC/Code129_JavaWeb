@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        getAttribute(attrName)获取属性值   参数: 属性名称
+        setAttribute(attrName, attrValue)`置属性值, 参数: 属性名称, 属性值
+        removeAttribute(attrName)删除属性   参数: 属性名称
+    -->
+    <img id="imgId" src="img/b.jpg">
+    <input type="button" value="获取src属性" onclick="getSrc()">
+    <input type="button" value="修改src属性" onclick="setSrc()">
+    <input type="button" value="删除src属性" onclick="removeSrc()">
+
+    <script>
+        //获取src属性
+        function getSrc() {
+            console.log(document.getElementById("imgId").getAttribute("src"));
+        }
+        //修改src属性
+        function setSrc() {
+            document.getElementById("imgId").setAttribute("src","img/mm.jpg");
+        }
+        //删除src属性
+        function removeSrc() {
+            document.getElementById("imgId").removeAttribute("src");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+            js函数定义：
+                方式一：普通函数
+                        语法：function 函数名(形参列表){
+                            函数体;
+                            [return语句]
+                        }
+                    注意：
+                        1.形参不需要指定数据类型   因为js是一门弱类型语言
+                        2.函数不需要指定返回值类型 因为js是一门弱类型语言  如果有返回值 就在函数体中加上return语句 没有就不写return语句
+                        3.在js中，不存在函数重载  后定义的函数会覆盖前面定义的
+
+                方式二：匿名函数
+                    语法： function(形参列表){
+                            函数体;
+                            [return语句]
+                        }
+                    注意：
+                        1.匿名函数就是没有设置函数名，当然也可以通过声明一个变量来接收匿名函数，此时这个变量名就是匿名函数的函数名称
+                        2.匿名函数后面一般都是和事件一起使用的  直接编写匿名函数用在某个事件或函数中
+
+           js函数的使用：
+                方式一：直接调用                var result = 函数名(实参列表);
+                方式二：和事件绑定在一起使用
+
+         */
+
+        //定义一个带参没有返回值的函数
+        function show(count){
+            for (let i = 0; i < count; i++) {
+                console.log("Hello World!");
+            }
+        }
+
+        //定义一个带返回值的函数
+        function sayHi(name){
+            return "Hi "+name;
+        }
+
+        //定义一个不带参数的show方法
+        function show(){
+            console.log("Hello JavaScript");
+        }
+
+        //定义一个匿名函数
+        var add  = function(a,b){
+           return a+b;
+        }
+
+        //调用函数
+        show(5);
+
+        var result = sayHi("梁歪");
+        console.log(result);
+
+        show();
+
+        var sum = add(3,2);
+        console.log(sum);
+    </script>
+</body>
+</html>

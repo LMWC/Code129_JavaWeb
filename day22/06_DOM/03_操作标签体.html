@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    操作标签体：
+        innerHTML：获取或设置标签体中的HTML内容  会解析HTML标签
+        innerText：获取或设置标签体中的文本内容   不会解析HTML标签
+    操作表单项元素的内容：
+        value：获取或设置表单项元素的值
+-->
+<div id="divId1"><font color="red">div1</font></div>
+
+username：<input type="text" name="username" id="username">
+
+<input type="button" value="获取div内容" onclick="f1()">
+<input type="button" value="设置div内容" onclick="f2()">
+
+<script>
+    //获取div内容
+    function f1() {
+        console.log(document.getElementById("divId1").innerText);
+        console.log(document.getElementById("divId1").innerHTML);
+
+        console.log(document.getElementById("username").value);
+    }
+
+    //设置div内容
+    function f2() {
+        //document.getElementById("divId1").innerText = "hahaha";
+        //document.getElementById("divId1").innerHTML = "hahaha";
+
+        //document.getElementById("divId1").innerText = "<font color='green'>hello js</font>";
+        document.getElementById("divId1").innerHTML = "<font color='green'>hello js</font>";
+
+        document.getElementById("username").value = "admin";
+    }
+</script>
+</body>
+</html>

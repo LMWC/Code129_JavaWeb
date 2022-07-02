@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--外部样式-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--内部样式-->
+    <style>
+        font[color]{
+            color: blue;
+        }
+        font[size]{
+            font-size: 50px;
+            color:pink;
+        }
+        p{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        CSS基本语法：
+            选择器{
+                属性：属性值 属性值;
+                ...
+                属性：属性值 属性值;
+            }
+         选择器：选择网页中指定的标签元素
+    -->
+    <!--为什么要学css-->
+    <!--把所有的font标签的color属性值改成蓝色:大量修改代码,维护性太差  css可以解决问题-->
+    <font color="red">字体标签</font>
+    <font color="red">字体标签</font>
+    <font color="red">字体标签</font>
+    <font color="red">字体标签</font>
+    <font color="red">字体标签</font>
+    <font color="red">字体标签</font>
+    <br/>
+
+    <!--font标签中size属性的取值范围:1-7  如果想要让字体更大,就实现不了   css可以解决问题-->
+    <font size="7">字体</font>
+    <br/>
+
+    <!--段落标签,如果想要设置段落标签中的文本设置为红色,就必须嵌套font标签,如果不想嵌套,实现不了   css可以解决问题-->
+    <p>段落</p>
+
+</body>
+</html>

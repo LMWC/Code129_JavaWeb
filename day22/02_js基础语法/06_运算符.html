@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+        一元运算符：++，--
+        算术运算符：+，-，*，/，%
+        赋值运算符：=，+=，-=…
+        关系运算符：>，<，>=，<=，!=，==，===…
+        逻辑运算符：&&，||，!
+        三元运算符：条件表达式 ?  true_value : false_value
+        注意:
+             1.number类型和字符串做-,*,/,%的时候,字符串自动的进行类型转换,前提字符串里面的数值要满足number类型
+             2.+号两边有一方为string类型 则进行字符串拼接，如果+号两边都是number类型 进行加运算
+             3./除法运算会保留小数位
+             4.== 只比较值是否相等   === 类型要相等,并且值也要相等
+     */
+    //1.number类型和字符串做-,*,/,%的时候,字符串自动的进行类型转换,前提字符串里面的数值要满足number类型
+    var a = "15";  //如果一个字符串中有数字和字符【数字在前 字符在后】可以使用parseInt转为数字  但是不能自动转换为数字
+    var b= 3;
+    var c = 2;
+    var d = 10;
+    var e = 15;
+    console.log(a - b);     //12
+    console.log(a + b);     //153
+    console.log(b + c);     //5
+    console.log(b / c);     //1.5
+    console.log(d / b);     //3.33333333333...
+
+    console.log(a == e);    //true       java中的equals
+    console.log(a === e);   //false      java中的==
+
+</script>
+</body>
+</html>

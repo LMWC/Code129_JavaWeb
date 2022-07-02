@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+
+    <!--
+        外部引入：
+            1.定义一个独立的js文件
+            2.在html文档中使用script标签引入
+            注意：
+                1.js文件中写js代码 不需要编写script标签
+                2.script标签在引入外部js文件时不能写成自闭合的  依然要成对出现
+                3.script标签不能既引入外部js文件 又在标签体内编写js代码，这样 只有外部的js文件生效，标签体内的js代码不会生效执行
+                4.如果既想使用外部js文件 又想使用内部的js代码  此时可以创建两个script标签，先引入外部的，在编写内部js代码
+    -->
+
+    <!--外部引入-->
+    <script src="js/index.js"></script>
+    <!--内部引入-->
+    <script>
+        alert("Hello zhangsan");
+    </script>
+</body>
+</html>

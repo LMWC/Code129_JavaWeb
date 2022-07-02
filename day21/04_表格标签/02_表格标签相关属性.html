@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--需求：定义一个学生信息表 有序号、学生姓名、学生年龄、学生成绩  存放张三、李四、王五三个学生的信息-->
+
+    <!--注意：内容编写在td中 td单元格定义在tr中 tr定义在table中  -->
+    <!--
+        table：表格标签
+            tr：行
+            td：列 单元格  在单元格可以存放文本、图片、超链接、列表...  可以嵌套表格
+        table标签属性：
+            掌握：
+                border：表格边框  0：没有 1：有
+                width：表格的宽度     设置方式：1.像素 px  2.百分比  相对于父标签的宽度
+                height：表格的高度
+            了解：
+                align：设置表格水平对齐方式  left：居左 默认 center：居中  right：居右
+                bgcolor：设置表格背景颜色
+                cellspacing：设置单元格和单元格之间的间隔
+                cellpadding：设置单元格和内容之间的间隔
+        tr标签属性：
+            掌握：
+               align：设置行水平对齐方式   left：居左 默认 center：居中  right：居右
+               valign:设置垂直方向对齐方式  top：居上    middle：居中 默认  bottom：居下
+        td标签属性：
+            掌握：
+                colspan： 跨列合并 合并列  合并一行的多列    保留第一列 删除其他列  colspan=3  表示合并3列
+                rowspan：跨行合并  合并行  合并一列的多行    保留第一行 删除其他行  rowspan=3  表示合并3行
+            了解：
+                align：单独设置当前单元格内容水平对齐方式
+       了解的表格标签：
+            th标签：标题行单元格标签  会自动让单元格内容加粗居中显示
+            caption标签：设置表格标题 写在table中
+
+    -->
+
+
+    <table border="1" width="400px" height="400px" align="center" cellspacing="0" cellpadding="0" bgcolor="#ffc0cb">
+        <caption>学生信息表</caption>
+        <tr >
+            <th>序号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+            <th>成绩</th>
+        </tr>
+        <tr align="center">
+            <td>1</td>
+            <td>张三</td>
+            <td rowspan="2">18</td>
+            <td>88</td>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td>李四</td>
+            <td>99</td>
+        </tr>
+        <tr align="center">
+            <td>3</td>
+            <td>王五</td>
+            <td>20</td>
+            <td>100</td>
+        </tr>
+        <tr align="center">
+            <td colspan="4">合计：3人</td>
+        </tr>
+    </table>
+</body>
+</html>

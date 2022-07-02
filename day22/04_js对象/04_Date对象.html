@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        //1.创建日期
+        //方式一：创建当前日期
+        var date1 = new Date();
+        document.write("date1="+date1+"<br/>");
+
+        //方式二：指定年月日
+        var date2= new Date(2022,4,20);
+        document.write("date2="+date2+"<br/>");
+
+        //方式三：指定年月日 时分秒
+        var date3= new Date(2022,4,20,14,30,30);
+        document.write("date3="+date3+"<br/>");
+
+        //2.常用方法
+        //注意：月份：0-11  0表示1月 11表示12月
+        document.writeln(date1.getFullYear()+"/"+(date1.getMonth()+1)+"/"+date1.getDate());
+        document.write(date1.getHours()+":"+(date1.getMinutes()+1)+":"+date1.getSeconds());
+
+        //获取当前日期时间【1970-1-1】距离基准时间的毫秒数 【时间戳】
+        document.write("<br/>"+date1.getTime()+"<br/>")
+
+        document.write("<br/>"+date1.toLocaleString()+"<br/>")          //显示年月日 时分秒
+        document.write("<br/>"+date1.toLocaleDateString()+"<br/>")      //显示年月日
+        document.write("<br/>"+date1.toLocaleTimeString()+"<br/>")      //显示时分秒
+
+
+
+
+    </script>
+</body>
+</html>
