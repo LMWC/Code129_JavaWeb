@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.BrandDao">
+
+    <resultMap id="brandMap" type="Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <!--抽取公共的sql片段-->
+    <sql id="querySql">
+        <where>
+            <if test="brand.status!=null">
+                status=#{brand.status}
+            </if>
+            <if test="brand.companyName!=null and brand.companyName.length>0">
+                and company_name like concat('%',#{brand.companyName},'%')
+            </if>
+            <if test="brand.brandName!=null and brand.brandName.length>0">
+                and brand_name like concat('%',#{brand.brandName},'%')
+            </if>
+        </where>
+    </sql>
+
+    <!--查询所有品牌-->
+    <select id="selectAll" resultMap="brandMap">
+        select * from tb_brand
+    </select>
+
+    <!--添加品牌-->
+    <insert id="add">
+        insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
+    <!--删除品牌-->
+    <delete id="delete">
+        delete from tb_brand where id=#{id}
+    </delete>
+
+    <!--修改品牌-->
+    <update id="update">
+        update tb_brand
+         <set>
+             <if test="brandName != null and brandName != ''">
+             brand_name=#{brandName},
+             </if>
+             <if test="companyName != null and companyName != ''">
+             company_name=#{companyName},
+             </if>
+             <if test="ordered != null">
+             ordered=#{ordered},
+             </if>
+             <if test="description != null and description != ''">
+             description=#{description},
+             </if>
+             <if test="status != null">
+             status=#{status}
+             </if>
+         </set>
+          where id=#{id}
+    </update>
+
+    <!--批量删除-->
+    <delete id="deleteByIds">
+        delete from tb_brand where id in
+        <!--foreach遍历数组元素完成SQL语句拼接  eg:(5,6,9) -->
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!--分页查询-->
+    <select id="selectByPage" resultMap="brandMap">
+        select * from tb_brand limit #{offset},#{pageSize}
+    </select>
+    <select id="total">
+        select count(*) from tb_brand
+    </select>
+
+    <!--条件查询-根据条件查询当前页数据-->
+    <select id="selectByPageOnCondition" resultMap="brandMap">
+        select * from tb_brand
+        <include refid="querySql"/>
+        limit #{offset},#{pageSize}
+    </select>
+
+    <!--条件查询-根据条件查询总条数-->
+    <select id="totalOnCondition" resultType="java.lang.Integer">
+        select count(*) from tb_brand
+        <include refid="querySql"/>
+    </select>
+</mapper>
