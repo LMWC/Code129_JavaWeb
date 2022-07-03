@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <bookName>《架构师成长之路》</bookName>
+        <press>黑马程序员</press>
+        <publicationDate>2010-6-6</publicationDate>
+        <price>125.00</price>
+    </book>
+    <book>
+        <bookName>《JavaEE企业级开发》</bookName>
+        <press>黑马研究院</press>
+        <publicationDate>2011-5-5</publicationDate>
+        <price>115.80</price>
+    </book>
+    <book>
+        <bookName>《Oracle指南》</bookName>
+        <press>清华计算机</press>
+        <publicationDate>2012-7-7</publicationDate>
+        <price>89.00</price>
+    </book>
+</books>

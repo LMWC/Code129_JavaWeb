@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">  
+  <modelVersion>4.0.0</modelVersion>  
+  <groupId>com.itheima</groupId>  
+  <artifactId>request_response_exercise</artifactId>  
+  <version>1.0-SNAPSHOT</version>  
+  <packaging>war</packaging>  
+  <!--项目的配置   因为Maven项目编译代码时默认使用JDK1.5，所以需要设置JDK的编译版本为1.8-->  
+  <properties> 
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>  
+    <maven.compiler.source>1.8</maven.compiler.source>  
+    <maven.compiler.target>1.8</maven.compiler.target> 
+  </properties>  
+  <!--依赖管理-->
+  <dependencies>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.46</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.5.7</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>jsp-api</artifactId>
+      <version>2.2</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>4.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-beanutils</groupId>
+      <artifactId>commons-beanutils</artifactId>
+      <version>1.9.3</version>
+    </dependency>
+  </dependencies>
+  <!--配置tomcat插件-->  
+  <build> 
+    <plugins> 
+      <plugin> 
+        <groupId>org.apache.tomcat.maven</groupId>  
+        <artifactId>tomcat7-maven-plugin</artifactId>  
+        <version>2.2</version>  
+        <!--访问项目url：http://localhost:8080/webdemo-->  
+        <!--后期开发项目时为了方便：为设置端口号为80 项目的访问路径为/ url：http://localhost/-->  
+        <configuration> 
+          <!--项目访问的虚拟路径-->  
+          <path>/</path>  
+          <!--tomcat端口号-->  
+          <port>80</port>
+        </configuration> 
+      </plugin> 
+    </plugins> 
+  </build> 
+</project>

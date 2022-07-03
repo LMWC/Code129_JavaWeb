@@ -1,0 +1,18 @@
+<c3p0-config>
+	<default-config>
+
+		<!--把c3p0-config.xml配置文件拷贝到src路径下(连接池会自动读该文件)-->
+		<!--**配置文件的名字不能修改**-->
+		<!--**配置文件一定要放在src路径下**-->
+		<!--**配置文件中name属性的值不能修改,必须为设置连接参数的set方法去掉set然后首字母变小写**-->
+
+		<!--数据库驱动类-->
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<!--数据库地址-->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/day16?useSSL=false&amp;serverTimezone=UTC</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxPoolSize">20</property>
+	</default-config>
+</c3p0-config>
