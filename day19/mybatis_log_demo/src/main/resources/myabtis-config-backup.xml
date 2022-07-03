@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--
+        使用步骤：
+            1.项目中提供一个xxx.properties文件
+            2.使用properties标签引入xxx.properties文件
+            3.使用${properties文件中的key} 获取数据使用
+    -->
+    <!--1.引入外部properties文件-->
+    <properties resource="db.properties"/>
+
+    <!--2.设置类型别名-->
+    <typeAliases>
+        <!--2.1:单个设置-->
+        <!--<typeAlias type="com.itheima.bean.User" alias="User"/>-->
+        
+        <!--2.2:批量设置-->
+        <package name="com.itheima.bean"/>
+    </typeAliases>
+
+    <!--数据库环境 【可以配置多个】  通过default属性指定具体使用哪一套数据库环境-->
+    <environments default="development">
+        <!--每一个数据环境 都有一个id值 这个id值要是唯一的-->
+        <environment id="development">
+            <!--事务管理者 MyBatis框架事务管理默认使用JDBC事务管理-->
+            <transactionManager type="JDBC"/>
+            <!--dataSource就是连接池 MyBatis默认使用自带连接池 POOLED  、UNPOOLED(不使用连接池)  以后学习Spring之后会使用第三方的连接池-->
+            <dataSource type="POOLED">
+                <!--数据库驱动-->
+                <property name="driver" value="${jdbc.driverClass}"/>
+                <!--数据库url-->
+                <property name="url" value="${jdbc.url}"/>
+                <!--数据库用户名-->
+                <property name="username" value="${jdbc.username}"/>
+                <!--数据库密码-->
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+        <environment id="product">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!--数据库驱动-->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <!--数据库url-->
+                <property name="url" value="jdbc:mysql://localhost:3306/day19?useSSL=false&amp;serverTimezone=UTC"/>
+                <!--数据库用户名-->
+                <property name="username" value="root"/>
+                <!--数据库密码-->
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--3.引入映射文件  加载mybatis配置文件时 也要同时把映射文件加载到程序中-->
+    <mappers>
+        <!--3.1：方式一：通过映射文件路径引入-->
+        <!--<mapper resource="com/itheima/dao/UserDao.xml"/>-->
+
+        <!--3.2：方式二：扫描接口方式引入  注意：dao接口要和dao映射文件名称相同且在同一目录下-->
+        <!--3.2.1：单个接口扫描-->
+        <!--<mapper class="com.itheima.dao.UserDao"/>-->
+
+        <!--3.2.2：批量扫描  【推荐使用】-->
+        <package name="com.itheima.dao"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- （1）基于接口代理方式开发Dao层，编写映射文件需要遵循哪几点规范？ -->
+<!--
+        MyBatis程序开发规范：
+            1、Mapper.xml文件中的namespace必须和mapper(Dao)接口的全限定名相同。
+            2、Mapper.xml文件中select,update等的标签id的值必须和mapper(Dao)接口的方法名相同
+            3、Mapper.xml文件中select,update等的标签的parameterType必须和mapper(Dao)接口的方法的形参类型对应
+            4、Mapper.xml文件中select标签的resultType必须和mapper(Dao)接口的方法的返回值类型对应
+            5、Mapper.xml文件的文件名尽量和mapper(Dao)接口的名字一样
+            6、Mapper.xml文件的路径尽量和mapper(Dao)接口的路径在同一层目录
+    -->
+<!-- （2）映射文件中有哪些动态SQL标签？【下一次课作业-预习】 -->
+<!--    * if
+
+        * choose (when, otherwise)
+
+        * trim (where, set)
+
+        * foreach
+    -->

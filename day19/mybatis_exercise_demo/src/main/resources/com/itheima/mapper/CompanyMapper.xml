@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间 表示当前这个映射文件是为哪个接口中的方法配置对应的SQL语句  写接口的全限定类名-->
+<mapper namespace="com.itheima.mapper.CompanyMapper">
+
+    <select id="findById" parameterType="String" resultType="company">
+        select * from tb_company where id=#{id}
+    </select>
+
+    <select id="findAll" resultType="company">
+        select * from tb_company
+    </select>
+
+    <select id="findByCondition" parameterType="Company" resultType="company">
+        select * from tb_company
+        <where>
+
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+
+            <if test="name != null and name != '' ">
+                and name like #{name}
+            </if>
+
+            <if test="address != null and address != '' ">
+                and address like #{address}
+            </if>
+
+            <if test="phone != null and phone != '' ">
+                and phone like #{phone}
+            </if>
+
+            <if test="industry != null and industry != '' ">
+                and industry like #{industry}
+            </if>
+
+        </where>
+
+    </select>
+
+</mapper>

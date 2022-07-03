@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.BrandDao">
+
+    <resultMap id="brandMap" type="Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <!--sql标签：用于提取公共的sql语句  方便进行维护-->
+    <!--include标签：用于引用提取的公共sql语句  通过refid属性指向sql标签的id属性值-->
+    <sql id="selectBrand">
+        select brand_name,company_name,description from tb_brand
+    </sql>
+
+    <!--动态SQL实现多条件查询 根据条件查询品牌信息-->
+    <!-- 方式一：if + where 1=1-->
+    <!--
+        if标签：用于条件判断 当test属性值为true时，会将if标签体中sql片段拼接到sql语句中 为false时，则不拼接
+            test属性：必须的 返回boolean类型的值
+            注意：
+                1.在test属性值中  获取参数 不需要使用#{} 直接写参数名称或对象的属性名称
+                2.在test属性值中  进行条件表达式逻辑运算 并且使用and 或者使用or
+        使用场景：多条件查询
+    -->
+    <select id="selectByCondition01" parameterType="Brand" resultMap="brandMap">
+        <include refid="selectBrand" /> where 1=1
+                <if test="status!=null">
+                    and status=#{status}
+                </if>
+                <if test="brandName!=null and  brandName.length>0">
+                    and brand_name like concat('%',#{brandName},'%')
+                </if>
+                <if test="companyName!=null and  companyName.length>0">
+                    and company_name like concat('%',#{companyName},'%')
+                </if>
+    </select>
+
+    <!--
+        where标签：用于替代where 1=1 将if标签放在where标签体中
+            只要有一个if标签条件成立 就会自动在sql语句中添加where关键字 拼接条件
+            好处：会自动去除if标签体SQL片段中前面多余的关键字and | or  但是不会自动添加关键字
+    -->
+    <!-- 方式二：if + where-->
+    <select id="selectByCondition02" parameterType="Brand" resultMap="brandMap">
+        <include refid="selectBrand" />
+        <where>
+            <if test="status!=null">
+                and status=#{status}
+            </if>
+            <if test="brandName!=null and  brandName.length>0">
+                and brand_name like concat('%',#{brandName},'%')
+            </if>
+            <if test="companyName!=null and  companyName.length>0">
+                and company_name like concat('%',#{companyName},'%')
+            </if>
+        </where>
+    </select>
+
+    <!--
+        trim：替代where标签
+           prefix属性：设置拼接SQL片段的前缀  如果trim标签体中只要有一个if标签条件成立 就会为if标签体中的SQL片段加上一个前缀where
+           prefixOverrides：去除if标签体中SQL片段前面多余的关键字and|or
+           suffix属性：设置拼接SQL片段的后缀
+           suffixOverrides：去除if标签体中SQL片段后面多余的关键字
+    -->
+    <!-- 方式三：if + trim-->
+    <select id="selectByCondition03" parameterType="Brand" resultMap="brandMap">
+        <include refid="selectBrand" />
+        <trim prefix="where" prefixOverrides="and|or">
+            <if test="status!=null">
+                and status=#{status}
+            </if>
+            <if test="brandName!=null and  brandName.length>0">
+                and brand_name like concat('%',#{brandName},'%')
+            </if>
+            <if test="companyName!=null and  companyName.length>0">
+                and company_name like concat('%',#{companyName},'%')
+            </if>
+        </trim>
+    </select>
+
+    <!--
+        choose标签：类似于java中多重if选择结构
+            when标签：类似于if判断  只有有一个条件成立 就不会再执行后续的条件判断了
+            otherwise标签：类似于else  当所有条件都不成立 执行else
+    -->
+    <!--动态SQL实现单条件查询 根据条件查询品牌信息 choose-->
+    <select id="selectByCondition04" parameterType="Brand" resultMap="brandMap">
+        <include refid="selectBrand" />
+        <where>
+            <choose>
+                <when test="status!=null">
+                    and status=#{status}
+                </when>
+                <when test="brandName!=null and  brandName.length>0">
+                    and brand_name like concat('%',#{brandName},'%')
+                </when>
+                <when test="companyName!=null and  companyName.length>0">
+                    and company_name like concat('%',#{companyName},'%')
+                </when>
+                <otherwise>
+                    1=1
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!-- 动态修改字段 if -->
+    <!--方式一：if-->
+    <update id="update01" parameterType="Brand">
+        update tb_brand set
+            <if test="brandName!=null and brandName.length>0">
+                brand_name=#{brandName},
+            </if>
+            <if test="companyName!=null and companyName.length>0">
+                company_name=#{companyName},
+            </if>
+            <if test="ordered!=null">
+                ordered=#{ordered},
+            </if>
+            <if test="description!=null and description.length>0">
+                description=#{description},
+            </if>
+            <if test="status!=null">
+                status=#{status}
+            </if>
+            where id=#{id}
+    </update>
+
+    <!--
+        set标签：用于替代set关键字 只要set标签体中有一个if标签条件成立 就会在sql语句中添加上set关键字
+                作用：会自动去除多余的,
+    -->
+    <!-- 动态修改字段 -->
+    <!--方式二：if+set-->
+    <update id="update02" parameterType="Brand">
+        update tb_brand
+        <set>
+            <if test="brandName!=null and brandName.length>0">
+                brand_name=#{brandName},
+            </if>
+            <if test="companyName!=null and companyName.length>0">
+                company_name=#{companyName},
+            </if>
+            <if test="ordered!=null">
+                ordered=#{ordered},
+            </if>
+            <if test="description!=null and description.length>0">
+                description=#{description},
+            </if>
+            <if test="status!=null">
+                status=#{status}
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+
+    <!--
+        trim：替代set标签
+           prefix属性：设置拼接SQL片段的前缀  如果trim标签体中只要有一个if标签条件成立 就会为if标签体中的SQL片段加上一个前缀where
+           prefixOverrides：去除if标签体中SQL片段前面多余的关键字and|or
+           suffix属性：设置拼接SQL片段的后缀
+           suffixOverrides：去除if标签体中SQL片段后面多余的关键字,
+    -->
+    <!-- 动态修改字段 -->
+    <!--方式三：if+trim-->
+    <update id="update03" parameterType="Brand">
+        update tb_brand
+        <trim prefix="set" suffixOverrides="," suffix="where id=#{id}">
+            <if test="brandName!=null and brandName.length>0">
+                brand_name=#{brandName},
+            </if>
+            <if test="companyName!=null and companyName.length>0">
+                company_name=#{companyName},
+            </if>
+            <if test="ordered!=null">
+                ordered=#{ordered},
+            </if>
+            <if test="description!=null and description.length>0">
+                description=#{description},
+            </if>
+            <if test="status!=null">
+                status=#{status}
+            </if>
+        </trim>
+    </update>
+
+    <!--
+        foreach标签：用于遍历集合或数组元素  一般和in一起使用
+            collection：要遍历的集合|数组
+            item:迭代变量【集合或数组中的元素】
+            open：SQL片段开始部分
+            separator：元素与元素之间的分隔符
+            close：SQL片段结尾部分
+        (5,6)
+    -->
+    <!--批量删除  使用foreach标签遍历集合|数组中的元素  一般和in一起使用
+        通过foreach遍历  得到SQL片段：(5,6)
+    -->
+    <delete id="deleteByIds">
+        delete from tb_brand where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+
+    </delete>
+</mapper>

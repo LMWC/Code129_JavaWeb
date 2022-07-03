@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--1.引入外部properties文件-->
+    <properties resource="db.properties"/>
+
+    <!--2.设置类型别名-->
+    <typeAliases>
+        <!--批量设置  name：要设置别名的类所在的包名称-->
+        <package name="com.itheima.bean"/>
+    </typeAliases>
+
+    <!--3.数据库环境配置-->
+    <environments default="development">
+        <environment id="development">
+            <!--事务管理者 MyBatis框架事务管理默认使用JDBC事务管理-->
+            <transactionManager type="JDBC"/>
+            <!--dataSource就是连接池 MyBatis默认使用自带连接池 POOLED  、UNPOOLED(不使用连接池)  以后学习Spring之后会使用第三方的连接池-->
+            <dataSource type="POOLED">
+                <!--数据库驱动-->
+                <property name="driver" value="${jdbc.driverClass}"/>
+                <!--数据库url-->
+                <property name="url" value="${jdbc.url}"/>
+                <!--数据库用户名-->
+                <property name="username" value="${jdbc.username}"/>
+                <!--数据库密码-->
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--4.引入映射文件  加载mybatis配置文件时 也要同时把映射文件加载到程序中-->
+    <mappers>
+        <!--批量扫描  【推荐使用】 name：dao接口所在的包名称-->
+        <package name="com.itheima.dao"/>
+    </mappers>
+</configuration>

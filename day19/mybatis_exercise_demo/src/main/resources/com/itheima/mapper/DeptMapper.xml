@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间 表示当前这个映射文件是为哪个接口中的方法配置对应的SQL语句  写接口的全限定类名-->
+<mapper namespace="com.itheima.mapper.DeptMapper">
+
+    <select id="findById" parameterType="String" resultType="dept">
+        select * from tb_dept where id=#{id}
+    </select>
+
+    <select id="findAll" resultType="dept">
+        select * from tb_dept
+    </select>
+
+    <select id="findByCondition" parameterType="Dept" resultType="dept">
+        select * from tb_dept
+        <where>
+
+            <if test="id != null and id != '' ">
+                and id = #{id}
+            </if>
+
+            <if test="name != null and name != '' ">
+                and name like #{name}
+            </if>
+
+        </where>
+
+    </select>
+
+</mapper>

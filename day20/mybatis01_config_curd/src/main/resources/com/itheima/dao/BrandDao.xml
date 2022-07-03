@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.BrandDao">
+
+    <!--
+        1.问题：查询出来的品牌信息中的品牌名称和公司名称为null
+            原因：
+                1.tb_brand表中的字段和Brand类中属性名称不一致  导致MyBatis无法自动将查询的数据填充到对象的属性中
+                2.不要修改类属性brandName为brand_name【不推荐】 遵从java命令规范 方法名变量名都使用驼峰命名法
+                   不要修改表字符brand_name为brandName【不推荐】 原因是当数据库服务器系统使用Linux时 会对字段名区分大小写
+
+            解决：
+                1.起别名 在查询语句中为表中字段设置别名 和类中属性名称保持一致就好
+                2.手动配置数据库表字段和类中属性的映射就可以了 使用resultMap标签手动配置表中字段和属性的映射
+    -->
+
+
+    <!--
+        resultMap标签：用于手动配置字段和属性映射
+            id属性：restMap唯一标识  用于通过id值引用该restMap
+            type属性：配置哪个类的属性和表字段映射
+            子标签：
+                id标签：用于配置主键列和属性的映射
+                result标签：用于配普通列和属性的映射
+        使用步骤：
+            1.定义resultMap标签  定义字段和属性映射
+            2.在select标签中使用resultMap属性根据id引入配置好的resultMap
+        注意：
+            1.select标签中必须有resultType属性或resultMap属性
+            2.建议不要在select标签中同时设置resultType和resultMap属性  没有意义 因为最终只会使用resultMap属性
+    -->
+    <resultMap id="brandMap" type="Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <!--查询所有品牌信息-->
+    <!--解决方式一：起别名-->
+    <!--<select id="selectAll" resultType="Brand">
+        select id,brand_name AS brandName,company_name AS companyName,ordered,description,status from tb_brand
+    </select>-->
+
+    <!--解决方式二：使用resultMap-->
+    <select id="selectAll"  resultMap="brandMap">
+        select * from tb_brand
+    </select>
+
+    <!--
+        select标签：查询 用于定义查询sql语句
+            id属性：接口方法名称
+            parameterType：接口方法形参类型 【此处可以省略，MyBatis会自动识别参数类型进行赋值】
+                情况1.单个简单类型【基本数据类型+String】参数  设置：直接写 int、string
+                    获取参数：#{任意名称} 但是建议在#{}中就写形参变量名
+            resultType|resultMap：接口方法返回值类型
+                情况1.返回泛型集合  设置resultType时 写集合的泛型类型
+                情况2.返回对象类型  设置resultType时 直接写对象的类型
+
+            select标签体：写查询SQL语句
+    -->
+    <!--查询详情-->
+    <select id="selectById" parameterType="int" resultMap="brandMap">
+        select * from tb_brand where id=#{aa}
+    </select>
+
+    <!--
+        insert标签：插入 用于设置增加数据的SQL语句
+            id属性：接口方法名称
+            parameterType：接口方法形参类型 【此处可以省略，MyBatis会自动识别参数类型进行赋值】
+                情况2：参数为一个对象   设置：对象的类型  获取：#{对象的属性名称}
+            insert标签体：增加SQL语句
+            注意：
+                1.增删改操作 默认返回受影响的行数 是int类型 所以增删改标签不需要设置resultType属性
+                2.由于mybatis使用JDBC事务管理 默认关闭了事务的自动提交，所以在执行增删改操作时 需要手动提交|回滚事务
+    -->
+    <!--增加品牌-->
+    <insert id="add" parameterType="Brand" >
+        insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
+    <!--方式一： 增加品牌-获取新增数据的主键id设置到主键所对应的对象属性上   -->
+    <!--
+        useGeneratedKeys="true"：表示使用数据库主键自增
+        keyProperty="id"：表示将插入记录自增的主键id值 绑定到对象的id属性上
+
+        注意：
+            1.在MyBatis映射文件中标签的id属性值必须是唯一的  不能重复
+            2.如果映射文件中后写的代码有问题，会导致前面的正常代码也无法运行
+
+    -->
+    <insert id="add01" parameterType="Brand" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
+    <!--
+        获取插入数据的主键，方便后续使用
+            方式一：只能获取数据库自增的主键数据  只能获取int
+            方式二：获取数据库自增的主键主键数据  也可以获取到其他方式生成的主键数据
+
+            扩展说明：
+                实际项目开发中，一个表必须存在一个主键列，主键列的设计：
+                    一流项目：雪花算法【64位二进制数据 】
+                    二流项目：uuid 【随机字符串】    主键列数据类型：String
+                    三流项目：数据库主键自增   【只有一些简单项目会用到】
+
+           举例：获取主键设计采用uuid  插入一条数据后 获取数据的主键  数据库表主键列数据类型为varchar，使用方式二获取
+             <selectKey resultType="string" keyColumn="id" keyProperty="id" order="BEFORE">
+                select uuid()
+            </selectKey>
+    -->
+
+    <!--方式二： 增加品牌-获取新增数据的主键id设置到主键所对应的对象属性上  方便后续使用  -->
+    <insert id="add02" parameterType="Brand" >
+        <selectKey resultType="int" keyColumn="id" keyProperty="id" order="AFTER">
+            select last_insert_id()
+        </selectKey>
+        insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
+    <!--
+        update标签：用于修改
+            update标签体：编写修改的SQL语句
+    -->
+    <!--修改全部字段-->
+    <update id="update" parameterType="Brand">
+        update tb_brand set brand_name=#{brandName},
+                            company_name=#{companyName},
+                            ordered=#{ordered},
+                            description=#{description},
+                            status=#{status}
+                            where id=#{id}
+    </update>
+
+    <!--根据id删除单个品牌-->
+    <delete id="deleteById" parameterType="int">
+        delete from tb_brand where id=#{id}
+    </delete>
+
+    <!--
+        ${}和#{}获取参数的区别：
+            1.#{}表示占位符，可以自动进行java类型和数据库类型转换，能够有效防止SQL注入，获取单个简单类型参数时，使用#{任意字段}
+            2.${}表示字符串拼接，不能自动进行java类型和数据库类型转换，不能防止SQL注入，获取单个简单类型参数时,使用${value}
+            3.如果传递的是多个参数封装到一个对象中，使用#{对象属性名称}或${对象属性名称}
+            使用场景：
+                1.能够用#{}解决的就使用#{}获取参数
+                2.当SQL语句需要的参数是一个表名或列名时 需要使用${}获取参数了  因为使用#{}获取表名或列名参数 会为表名列名加上单引号
+    -->
+
+    <!--方式一：根据品牌名称模糊查询品牌列表   ${}获取参数   eg：'%${value}%'-->
+    <select id="selectByBrandName01" parameterType="string" resultMap="brandMap">
+        select * from tb_brand where brand_name like '%${value}%'
+    </select>
+
+    <!--方式二：根据品牌名称模糊查询品牌列表 #{}获取参数    【推荐使用】-->
+    <select id="selectByBrandName02" parameterType="string" resultMap="brandMap">
+        select * from tb_brand where brand_name like concat('%',#{brandName},'%')
+    </select>
+
+
+    <!--
+        多个参数如何传递：
+            1.直接传递  【不推荐】
+            2.在接口方法形参前打上@Param注解            获取:#{Param注解value属性值}
+            3.将多个参数封装到对象中       【推荐使用】  获取：#{对象属性名称}
+            4.将多个参数封装到Map集合中                获取：#{map集合的key}
+
+        注意：如果多个参数不存在对应的类可以封装，此时应该自定义一个类用于封装所有参数。 【推荐使用】
+
+    -->
+
+    <!--根据条件查询品牌信息 -->
+    <!--方式一：多个参数可以直接传递  使用arg0、arg1... 接收  【不推荐使用】-->
+    <select id="selectByCondition01" resultMap="brandMap">
+        select * from tb_brand where status=#{arg0}
+                and company_name like concat('%',#{arg1},'%')
+                and brand_name like concat('%',#{arg2},'%')
+    </select>
+
+    <!--方式二：在接口方法形参前打上@Param注解 设置该注解value属性和形参变量名一致  获取：#{形参变量名}-->
+    <select id="selectByCondition02" resultMap="brandMap">
+        select * from tb_brand where status=#{status}
+        and company_name like concat('%',#{companyName},'%')
+        and brand_name like concat('%',#{brandName},'%')
+    </select>
+
+    <!--方式三：将多个参数封装到一个对象中传递  【推荐使用】 获取：#{对象属性名称}-->
+    <select id="selectByCondition03" resultMap="brandMap">
+        select * from tb_brand where status=#{status}
+        and company_name like concat('%',#{companyName},'%')
+        and brand_name like concat('%',#{brandName},'%')
+    </select>
+
+    <!--方式四：将多个参数封装到一个Map集合对象中传递  【很少用】 获取#{map的key}-->
+    <select id="selectByCondition04" resultMap="brandMap">
+        select * from tb_brand where status=#{status}
+        and company_name like concat('%',#{companyName},'%')
+        and brand_name like concat('%',#{brandName},'%')
+    </select>
+
+    <!--根据品牌状态和品牌名称模糊查询 再根据品牌排序字段进行升序排序-->
+    <select id="selectByCondition05" resultMap="brandMap">
+        select * from tb_brand where status=#{brand.status}
+            and brand_name like concat('%',#{brand.brandName},'%')
+            order by ${order}
+    </select>
+
+    <!--统计品牌个数-->
+    <select id="count" resultType="int">
+        select count(*) from tb_brand
+    </select>
+</mapper>

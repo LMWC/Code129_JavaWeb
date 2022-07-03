@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.BrandDao">
+
+    <!--方式一：使用resultMap 解决列名和java类属性不一致 数据无法自动填充问题-->
+    <resultMap id="brandMap" type="Brand">
+        <result column="brand_name" property="brandName" />
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <!--修改品牌记录的所有字段-->
+    <update id="update" parameterType="brand">
+        update tb_brand set
+            brand_name=#{brandName},
+            company_name=#{companyName},
+            ordered=#{ordered},
+            description=#{description},
+            status=#{status}
+            where id=#{id}
+    </update>
+
+    <!--多参数传递方式二：使用对象封装多个参数-->
+    <select id="selectByCondition" resultMap="brandMap" parameterType="brand">
+        select * from tb_brand
+            where status = #{status}
+            and brand_name like concat('%',#{brandName},'%')
+            and company_name like concat('%',#{companyName},'%')
+    </select>
+
+</mapper>

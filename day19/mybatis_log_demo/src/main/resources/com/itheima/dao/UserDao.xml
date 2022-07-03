@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace:命名空间 表示当前这个映射文件是为哪个接口中的方法配置对应的SQL语句  写接口的全限定类名-->
+<mapper namespace="com.itheima.dao.UserDao">
+
+    <!--
+        MyBatis程序开发规范：
+            1、Mapper.xml文件中的namespace必须和mapper(Dao)接口的全限定名相同。
+            2、Mapper.xml文件中select,update等的标签id的值必须和mapper(Dao)接口的方法名相同
+            3、Mapper.xml文件中select,update等的标签的parameterType必须和mapper(Dao)接口的方法的形参类型对应
+            4、Mapper.xml文件中select标签的resultType必须和mapper(Dao)接口的方法的返回值类型对应
+            5、Mapper.xml文件的文件名尽量和mapper(Dao)接口的名字一样
+            6、Mapper.xml文件的路径尽量和mapper(Dao)接口的路径在同一层目录
+    -->
+
+    <!--
+        select标签:查询
+            id：唯一标识 对应 接口中的方法名
+            resultType属性：接口方法返回值类型
+                返回值为泛型集合List<User>时，返回值类型设置为集合的泛型类型User  写类的全限定类名
+    -->
+
+    <!--
+        现象：Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'User'.  Cause: java.lang.ClassNotFoundException: Cannot find class: User
+        原因：如果没有在MyBatis核心配置文件中配置类型别名，就直接用类名而不是全限定类名 就会报错 无法解析类型别名
+        解决：
+            1.设置类型别名【MyBatis核心配置文件中】
+            2.写全限定类名
+        注意事项：
+            1.如果在MyBatis核心配置文件中设置了别名 使用时就会根据类型别名找到对应的类
+            2.别名在使用时 不区分大小写
+            3.设置了类型别名之后  在使用时设置返回值类型和参数类型时就不能再使用全限定类名了
+    -->
+    <select id="selectAll" resultType="user">
+        select * from t_user
+    </select>
+
+    <select id="selectById" parameterType="int" resultType="user">
+        select * from t_user where uid=#{id}
+    </select>
+
+
+</mapper>
