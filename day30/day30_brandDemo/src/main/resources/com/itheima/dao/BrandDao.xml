@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.BrandDao">
+
+    <resultMap id="brandMap" type="Brand">
+        <result column="brand_name" property="brandName"/>
+        <result column="company_name" property="companyName"/>
+    </resultMap>
+
+    <!--查询所有品牌-->
+    <select id="selectAll" resultMap="brandMap">
+        select * from tb_brand
+    </select>
+
+    <!--添加品牌-->
+    <insert id="add">
+        insert into tb_brand values(null,#{brandName},#{companyName},#{ordered},#{description},#{status})
+    </insert>
+
+    <!--修改品牌-->
+    <update id="update">
+        update tb_brand set brand_name=#{brandName},company_name=#{companyName},ordered=#{ordered},description=#{description},status=#{status} where id=#{id}
+    </update>
+
+    <!--根据id删除品牌-->
+    <delete id="delete">
+        delete from tb_brand where id=#{id}
+    </delete>
+
+    <!--根据id数组批量删除品牌   delete from tb_brand where id in (11,12)-->
+    <delete id="deleteByIds">
+        delete from tb_brand where id in
+        <foreach collection="ids" item="id" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <!--分页查询-查询当前页数据-->
+    <select id="selectByPageList" resultMap="brandMap">
+        select * from tb_brand limit #{offset},#{pageSize}
+    </select>
+
+    <!--分页查询-查询总条数-->
+    <select id="selectByPageTotal" resultType="int">
+        select count(*) from tb_brand
+    </select>
+
+
+    <!--抽取公共SQL-->
+    <sql id="whereSql">
+        <where>
+            <if test="brand.status!=null">
+                status=#{brand.status}
+            </if>
+            <if test="brand.companyName!=null and brand.companyName.length>0">
+                and company_name like concat('%',#{brand.companyName},'%')
+            </if>
+            <if test="brand.brandName!=null and brand.brandName.length>0">
+                and brand_name like concat('%',#{brand.brandName},'%')
+            </if>
+        </where>
+    </sql>
+
+    <!--条件查询-查询当前页数据-->
+    <select id="selectByPageOnConditionList" resultMap="brandMap">
+        select * from tb_brand
+            <include refid="whereSql"/>
+            limit #{offset},#{pageSize}
+    </select>
+
+    <!--条件查询-查询总条数-->
+    <select id="selectByPageOnConditionTotal" resultType="int">
+        select count(*) from tb_brand
+            <include refid="whereSql"/>
+    </select>
+</mapper>
