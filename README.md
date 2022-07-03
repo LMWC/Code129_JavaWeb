@@ -1,6 +1,6 @@
 # Code129_JavaWeb
-# **Code129_JavaWeb学习代码**
-[**MySQL数据库文件（与每日示例与练习对应）**](https://github.com/LMWC/Code129_JavaWeb/tree/master/MySQL)
+# **Code129_JavaWeb学习代码**  
+[**MySQL数据库文件（与每日示例与练习对应）**](https://github.com/LMWC/Code129_JavaWeb/tree/master/MySQL)  
 [**day14_MySQL基础**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day14/src)  
 [**day15_MySQL进阶**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day15/src)  
 [**day16_JDBC**](https://github.com/LMWC/Code129_JavaWeb/tree/master/day16)  
