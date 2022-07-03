@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itheima</groupId>
+    <artifactId>maven02_demo</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <!--Maven项目默认使用JDK1.5版本 如果你不指定JDK编译版本 则使用1.5-->
+    <!--所以 在创建Maven项目时 建议设置JDK的编译版本为1.8-->
+    <!--设置Maven项目JDK编译版本为1.8-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+     </properties>
+
+    <!--
+        依赖引入方式：
+            方式一:
+                在 pom.xml 中 按 alt + insert，选择 Dependency
+                在弹出的面板中搜索对应坐标，然后双击选中对应坐标
+                点击刷新按钮，使坐标生效
+            方式二: 去Maven官网找, 赋值,粘贴.  http://mvnrepository.com/
+            方式三:  按照提示自己写
+            注意：
+                1.如果在项目中需要用到单个jar包，一般会去到Maven仓库官网查询jar包的坐标 复制粘贴
+                2.搭建项目中，需要指定多个jar包坐标 此时 一般都会有成套的jar包坐标提供  直接复制粘贴 修修改改即可
+        依赖范围：表示jar包的作用范围
+            compile：默认值         如果一个jar包设置依赖范围为compile，则表示该jar包在编译、测试、运行时都需要被用到
+            test：测试环境下使用     如果一个jar包设置依赖范围为test，则表示该jar包只在测试环境下需要被用到                           eg：junit
+            provided：内部提供      如果一个jar包设置依赖范围为provided，则表示该jar包只在编译和测试环境下需要被用到，运行时不需要
+    -->
+    <!--依赖管理-->
+    <dependencies>
+        <!-- junit 单元测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <!--mysql驱动jar包-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+        <!--javaweb servlet jar包-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--druid数据源-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.1.23</version>
+        </dependency>
+    </dependencies>
+
+</project>
