@@ -27,6 +27,7 @@
   Non-Bundled Plugins: JBLJavaToWeb, Lombook Plugin, mobi.hsz.idea.gitignore, MavenRunHelper,        com.baomidou.plugin.idea.mybatisx
 - jdk 1.8.0_162  
 - maven-3.5.3  
+- tomcat-8.5.27  
 - mysql-5.7.29-winx64  
 
 
